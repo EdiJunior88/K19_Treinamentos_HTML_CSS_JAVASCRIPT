@@ -2,4 +2,4 @@
 
 <h1><i>K19 Treinamentos</i></h1>
 
-<strong>Exercícios baseados na apostila sobre HTML5, CSS e JAVASCRIPT</strong>
+<strong>Exercícios baseado na apostila sobre HTML5, CSS e JAVASCRIPT</strong>
