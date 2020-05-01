@@ -1,0 +1,42 @@
+<!-- Caixa de Textos e Rótulos -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Caixas de Texto e Rótulos</title>
+    </head>
+    <body>
+        <h1>Caixas de Texto e Rótulos</h1>
+        <br>
+
+        <!-- Geralmente, os formulários possuem uma ou mais caixas de texto.
+        As caixas de texto são adicionadas nos documentos HTML através do
+        elemento input. Esse elemento possui um atributo chamado type.
+        Para definir uma caixa de texto, o valor do atributo type deve ser
+        text. Normalmente, o input é definido pelos navegadores como
+        inline-level element.-->
+
+        <!-- Considere um formulário com diversas caixas de texto. Quando as
+        informações preenchidas esse formulário chegarem ao Web Server,
+        certamente, ele precisará saber o que foi preenchido em cada caixa.
+        Por isso, é necessário identificar esses dados. O atributo name do
+        elemento input é utilizado para resolver esse problema -->
+
+        <input type="text">
+        <input type="text" name="endereço">
+        <input type="text" name="cidade">
+
+        <br>
+        <br>
+
+        <!-- Nos formulários, os rótulos são fundamentais para informar aos
+        usuários quais dados devem ser preenchidos. Para adicionar um rótulo,
+        devemos utilizar o elemento label. Os textos dos rótulos são definidos
+        no conteúdo desse elemento -->
+
+        <label>Nome: </label>
+        <input type="text" name="nome" id="nome_id">
+
+    </body>
+</html>
