@@ -1,0 +1,61 @@
+<!-- EXERCÍCIO 63 - Código HTML 2.82 -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Exercício de Tabela</title>
+    </head>
+    <body>
+        <table>
+            <caption>Carros</caption>
+            <colgroup>
+                <col span="2"style="background-color: lightgray">
+                <col style="background-color: yellow">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Ano</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Última atualização: 06/2012</td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td rowspan="2">Toyota</td>
+                    <td>Corolla</td>
+                    <td>2010</td>
+                </tr>
+                <tr>
+                    <td>Carmy</td>
+                    <td>2011</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="3">Honda</td>
+                    <td>Civic</td>
+                    <td>2004</td>
+                </tr>
+                <tr>
+                    <td>Fit</td>
+                    <td>2012</td>
+                </tr>
+                <tr>
+                    <td>City</td>
+                    <td>2011</td>
+                </tr>
+
+                <tr>
+                    <td>Mitsubishi</td>
+                    <td>Lancer</td>
+                    <td>2012</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
