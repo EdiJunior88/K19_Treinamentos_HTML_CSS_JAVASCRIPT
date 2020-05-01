@@ -1,0 +1,51 @@
+<!-- Exemplo de agrupamento de colunas -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Exemplo de agrupamento de colunas</title>
+    </head>
+    <body>
+        <h1>Carros</h1>
+
+        <table>
+            <colgroup>
+                <!-- Agrupando a primeira e a segunda coluna -->
+                <col span="2" style="background-color: lightgray">
+
+                <!-- Agrupando apenas a terceira coluna -->
+                <col style="background-color: yellow">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Ano</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Última atualização: 06/2012</td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td>Toyota</td>
+                    <td>Corolla</td>
+                    <td>2010</td>
+                </tr>
+                <tr>
+                    <td>Honda</td>
+                    <td>Civic</td>
+                    <td>2011</td>
+                </tr>
+                <tr>
+                    <td>Mitsubishi</td>
+                    <td>Lancer</td>
+                    <td>2012</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
