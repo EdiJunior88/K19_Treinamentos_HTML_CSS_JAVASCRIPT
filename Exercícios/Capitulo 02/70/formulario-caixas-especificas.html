@@ -1,0 +1,129 @@
+<!-- EXERCÍCIO 70 - Código HTML 2.104 -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Exercício de formulário com caixas específicas</title>
+    </head>
+    <body>
+        <form action="parametros.asp" method="post">
+            <label for="keywords_id">Busca: </label>
+            <input
+                    id="keywords_id"
+                    type="search"
+                    name="keywords"
+                    placeholder="Keywords">
+
+            <br>
+
+            <label for="idade_id">Idade: </label>
+            <input
+                    id="idade_id"
+                    type="number"
+                    name="idade"
+                    min="18"
+                    max="60">
+
+            <br>
+
+            <label for="curtiu_id">Curtiu: </label>
+            <input
+                    id="curtiu_id"
+                    type="range"
+                    name="curtiu"
+                    min="0"
+                    max="10">
+
+            <br>
+
+            <label for="email_id">Email: </label>
+            <input
+                    id="email_id"
+                    type="email"
+                    name="email"
+                    placeholder="Seu email">
+
+            <br>
+
+            <label for="telefone_id">Telefone: </label>
+            <input
+                    id="telefone_id"
+                    type="tel"
+                    name="telefone"
+                    placeholder="Seu telefone">
+
+            <br>
+
+            <label for="site_id">Site: </label>
+            <input
+                    id="site_id"
+                    type="url"
+                    name="site"
+                    placeholder="Seu site">
+
+            <br>
+
+            <label for="nascimento_id">Nascimento: </label>
+            <input
+                    id="nascimento_id"
+                    type="date"
+                    name="nascimento">
+
+            <br>
+
+            <label for="festa_aniversario">Festa de Aniversário: </label>
+            <input
+                    id="festa_aniversario"
+                    type="datetime-local"
+                    name="festa_aniversario">
+
+            <br>
+
+            <label for="proximo_carnaval_mes_id">Mês do próximo Carnaval: </label>
+            <input
+                    id="proximo_carnaval_mes_id"
+                    type="month"
+                    name="proximo_carnaval_mes">
+
+            <br>
+
+            <label for="semana_rock_in_rio_id">Semana do Rock in Rio: </label>
+            <input
+                    id="semana_rock_in_rio_id"
+                    type="week"
+                    name="semana_rock_in_rio">
+
+            <br>
+
+            <label for="horario_de_entrada_id">Horário de Entrada: </label>
+            <input
+                    id="horario_de_entrada_id"
+                    type="time"
+                    name="horario_de_entrada">
+
+            <br>
+
+            <label for="senha_id">Senha: </label>
+            <input
+                    id="senha_id"
+                    type="password"
+                    name="senha"
+                    placeholder="Digite sua senha">
+
+            <br>
+
+            <label for="mensagem_id">Mensagem: </label>
+            <textarea
+                    id="mensagem_id"
+                    name="mensagem"
+                    rows="5"
+                    cols="50"
+                    maxlength="150"></textarea>
+
+            <br>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>

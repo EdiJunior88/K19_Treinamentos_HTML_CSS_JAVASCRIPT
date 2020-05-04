@@ -1,0 +1,37 @@
+<!-- Caixa de texto longo -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Caixa de texto longo</title>
+    </head>
+    <body>
+        <h1>Caixa de Texto Longo</h1>
+
+        <br>
+        <br>
+
+        <!-- Para coletar um texto com várias linhas, podemos utilizar o
+        elemento textarea. A quantidade de linhas de um textarea é definida
+        com o atributo rows e a quantidade de colunas com o atributo cols.
+
+        Esse elemento também possui o atributo name que funciona como no
+        elemento input.-->
+
+        <label for="mensagem_id">Texto Longo: </label>
+        <textarea id="mensagem_id" name="mensagem" rows="5" cols="50">
+
+        </textarea>
+
+        <br>
+
+        <!-- Podemos definir o limite de caracteres que podem ser inseridos
+        no conteúdo do elemento textarea através do atributo maxlength. -->
+
+        <label for="mensagem_id2">Texto 140 caracteres: </label>
+        <textarea id="mensagem_id2" name="mensagem" maxlength="140">
+
+        </textarea>
+    </body>
+</html>
