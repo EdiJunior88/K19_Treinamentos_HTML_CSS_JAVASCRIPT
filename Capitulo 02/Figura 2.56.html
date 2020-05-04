@@ -1,0 +1,46 @@
+<!-- Caixas de números -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Caixas de Números</title>
+    </head>
+    <body>
+        <h1>Caixas de Números</h1>
+
+        <br>
+        <br>
+
+        <!-- Para coletar dados numéricos, podemos utilizar caixas específicas
+        para números. No HTML5, há dois tipos de caixas para esse propósito.
+        Os dois são definidos com o elemento input. O valor do atributo type
+        é number para o primeiro tipo e range para o segundo tipo.
+
+        Esses dois tipos de componentes devem ser utilizados para coletar valores
+        de sequências numéricas pré-definidas. A principal diferença entre eles é
+        que o primeiro (type=number) deve oferecer um mecanismo preciso para os
+        usuários selecionarem o valor desejado enquanto o segundo (type=range) não
+        possui essa obrigação. A imagem a seguir mostra uma possível forma dos
+        navegadores exibirem essas caixas. -->
+
+        <label for="numero_1">Idade: </label>
+        <input id="numero_1" name="numero1" type="number">
+        <label for="numero_2">Quantidade: </label>
+        <input id="numero_2" name="numero2" type="range">
+
+        <br>
+        <br>
+
+        <!-- Para definir a sequência dos números que podem ser selecionados
+        pelos usuários, podemos utilizar os atributos min, max e step. Por
+        exemplo, para coletar um número da sequência {0; 0,2; 0,4; 0,6; 0,8; 1},
+        os valores dos atributos min, max e step devem ser 0, 1 e 0.2
+        respectivamente. -->
+
+        <label for="numero1_id">Idade: </label>
+        <input id="numero1_id" name="numero1" type="number" min="0" max="1" step="0.2">
+        <label for="numero2_id">Quantidade: </label>
+        <input id="numero2_id" name="numero2" type="range" min="0" max="1" step="0.2">
+    </body>
+</html>
