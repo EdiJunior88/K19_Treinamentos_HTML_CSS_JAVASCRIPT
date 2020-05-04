@@ -1,0 +1,44 @@
+<!-- date e datetime-local -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Caixas de datas e horas</title>
+    </head>
+    <body>
+        <h1>Caixas de Datas e Horas</h1>
+
+        <br>
+        <br>
+
+        <!-- Diversos tipos de caixas de entrada para coletar datas e horas
+        foram adicionados no HTML5. Todas essas caixas são adicionadas com o
+        elemento input e o valor do atributo type desse elemento assumirá um
+        dos valores listados a seguir.
+
+        • date: Utilizado para coletar data (dia, mês e ano) sem fuso horário.
+        • datetime: Utilizado para coletar data (dia, mês e ano) e hora (hora,
+        minuto, segundo e fraçãode segundo) com fuso horário em UTC.
+        • datetime-local: Utilizado para coletar data (dia, mês e ano) e hora
+        (hora, minuto, segundo e fração de segundo) sem fuso horário.
+        • month: Utilizado para coletar data composta por mês e ano sem fuso
+        horário.
+        • time: Utilizado para coletar hora (hora, minuto, segundo e fração de
+        segundo) sem fuso horá-rio.
+        • week: Utilizado para coletar data composta por semana e ano sem fuso
+        horário. A criação desses componentes permite que os navegadores melhorem
+        a usabilidade das páginas web. A forma de exibição das caixas de datas
+        e horas pode facilitar o processo de preenchimento dos formulários.
+        Inclusive, os navegadores podem exibir esses componentes de formas
+        diferentes de acordo com o dispositivo (computador, celular, tablet,
+        entre outros) -->
+
+        <input id="data_id" name="data" type="date">
+        <input id="data_hora_fuso_id" name="data-hora-fuso" type="datetime">
+        <input id="data_hora_id" name="data-hora" type="datetime-local">
+        <input id="mes_id" name="mes" type="month">
+        <input id="hora_id" name="hora" type="time">
+        <input id="semana_id" name="semana" type="week">
+    </body>
+</html>
