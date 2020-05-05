@@ -1,0 +1,88 @@
+<!-- Checkbox e Radios -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Checkbox e Radios</title>
+    </head>
+    <body>
+        <h1>CheckBox e Radios</h1>
+
+        <!-- Para adicionar um checkbox em um formulário, devemos utilizar o
+        elemento input com type igual a checkbox. Ao utilizar esse componente,
+        é importante definir um valor para o atributo value. No envio do
+        formulário, esse valor é transmitido ao Web Server se o checkbox
+        correspondente estiver marcado. -->
+
+        <input id="sim_id" name="newsletter" type="checkbox" value="sim">
+        <label for="sim_id">Sim</label>
+
+        <br>
+        <br>
+
+        <!-- Eventualmente é interessante agrupar um determinado conjunto de
+        checkboxes. Por exemplo, considere um formulário que coleta as
+        linguagens de programação que os usuários conhecem. Para cada linguagem,
+        podemos definir um checkbox. Para agrupar esses checkboxes, basta definir
+        o atributo name com o mesmo valor para eles -->
+
+        <input id="java_id" type="checkbox" value="java" name="linguagens">
+        <label for="java_id">Java</label>
+        <input id="csharp_id" type="checkbox" value="csharp" name="linguagens">
+        <label for="csharp_id">C#</label>
+        <input id="php_id" type="checkbox" value="php" name="linguagens">
+        <label for="php_id">PHP</label>
+        <input id="ruby_id" type="checkbox" value="ruby" name="linguagens">
+        <label for="ruby_id">Ruby</label>
+        <input id="perl_id" type="checkbox" value="perl" name="linguagens">
+        <label for="perl_id">Perl</label>
+
+        <br>
+        <br>
+
+        <!-- Para adicionar um radio em um formulário, devemos utilizar o
+        elemento input com type igual a radio. Ao utilizar esse componente,
+        é importante definir um valor para o atributo value. No envio do
+        formulário, esse valor é transmitido ao Web Server se o radio
+        correspondente estiver marcado -->
+
+        <input id="masculino_id" name="sexo" type="radio" value="masculino">
+        <label for="masculino_id">Masculino</label>
+
+        <br>
+        <br>
+
+        <!-- Eventualmente é interessante agrupar um determinado conjunto de
+        radios. Por exemplo, considere um formulário que coleta o time
+        preferido dos usuários. Para cada time, podemos definir um radio.
+        Para agrupar esses radios, basta definir o atributo name com o mesmo
+        valor para eles. -->
+
+        <input id="sp_id" type="radio" value="sao-paulo" name="time-preferido">
+        <label for="sp_id">São Paulo</label>
+        <input id="barcelona_id" type="radio" value="barcelona" name="time-preferido">
+        <label for="barcelona_id">Barcelona</label>
+        <input id="milan_id" type="radio" value="barcelona" name="time-preferido">
+        <label for="milan_id">Milão</label>
+        <input id="mu_id" type="radio" value="manchester-united" name="time-preferido">
+        <label for="mu_id">Manchester United</label>
+        <input id="bdm_id" type="radio" value="bayer-de-munique" name="time-preferido">
+        <label for="bdm_id">Bayer de Munique</label>
+
+        <br>
+        <br>
+
+        <!-- Por padrão, quando um formulário é exibido para os usuários, os
+        checkboxes e os radios não estão marcados. Algumas vezes, desejamos
+        que determinados checkboxes e radios estejam marcados quando os
+        formulários são apresentados aos usuários. Para resolver esse problema,
+        podemos utilizar o atributo checked do elemento input. Esse atributo
+        não precisa de valor -->
+
+        <input id="java_id" type="checkbox" value="java" name="linguagens" checked>
+        <label for="java_id">Java</label>
+        <input id="sp_id" type="radio" name="time-preferido" value="sao-paulo" checked>
+        <label for="sp_id">São Paulo</label>
+    </body>
+</html>
