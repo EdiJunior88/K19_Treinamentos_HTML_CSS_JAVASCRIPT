@@ -1,0 +1,99 @@
+<!-- Drop-down list -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Drop-down List</title>
+    </head>
+    <body>
+        <h1>Drop-Down List</h1>
+
+        <!-- Muitos formulários permitem que os usuários selecionem um
+        ou mais itens de uma lista de opções. Essa seleção pode ser
+        realizada através de um drop-down list. Para adicionar esse tipo
+        de componente, devemos utilizar o elemento select. Normalmente,
+        o select é definido pelos navegadores como inline-level element.
+
+        As opções devem ser definidas no conteúdo do elemento select e
+        elas são adicionadas com o elemento option. O conteúdo do elemento
+        option é exibido para os usuários. Esse elemento possui um atributo
+        chamado value. Quando o formulário for enviado, o valor do atributo
+        value é transmitido ao Web Server se a opção correspondente foi
+        selecionada pelo usuário. Se esse atributo não estiver definido, o
+        conteúdo do elemento option é transmitido ao Web Server se a opção
+        correspondente foi selecionada pelo usuário -->
+
+        <select id="estados_id" name="estado">
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RN">Rio Grande do Norte</option>
+        </select>
+
+        <br>
+        <br>
+
+        <!-- Por padrão, apenas um item de um drop-down list pode ser
+        selecionado pelos usuários. Mas, utilizando o atributo multiple,
+        um ou mais itens podem ser selecionados. Geralmente, mantendo a
+        tecla CTRL pressionada, os usuários poderão escolher dois ou mais
+        itens -->
+
+        <select id="estados_id2" name="estado" multiple="multiple">
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="PR">Paraná</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="BA">Bahia</option>
+        </select>
+
+        <br>
+        <br>
+
+        <!-- Nos drop-down lists com muitas opções, é interessante agrupar
+        as opções em categorias. Esse agrupamento pode ser realizado com o
+        elemento optgroup. Esse elemento possui um atributo chamado label.
+        O valor desse atributo é exibido no drop-down list. -->
+
+        <select id="estados_id3" name="estado">
+            <optgroup label="Região Sudeste">
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+            </optgroup>
+            <optgroup label="Região Sul">
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="PR">Paraná</option>
+            </optgroup>
+            <optgroup label="Região Nordeste">
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="BA">Bahia</option>
+            </optgroup>
+        </select>
+
+        <br>
+        <br>
+
+        <!-- Drop-down list com itens pré-selecionados
+        Quando um drop-down list é exibido para os usuários, opções podem
+        estar por padrão selecionadas. O atributo selected do elemento option
+        define as opções que devem estar selecionadas quando um drop-down list
+        é exibido para os usuários. Esse atributo não precisa de valor -->
+
+        <select id="estados_id4" name="estado" multiple="multiple">
+            <optgroup label="Região Sudeste">
+                <option value="SP" selected>São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+            </optgroup>
+            <optgroup label="Região Sul">
+                <option value="RS" selected>Rio Grande do Sul</option>
+                <option value="PR">Paraná</option>
+            </optgroup>
+            <optgroup label="Região Nordeste">
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="BA">Bahia</option>
+            </optgroup>
+        </select>
+    </body>
+</html>
