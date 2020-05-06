@@ -1,0 +1,42 @@
+<!-- EXERCÍCIO 80 - Código HTML 2.127 -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Drop-Down List</title>
+    </head>
+    <body>
+        <h1>Drop-Drown List</h1>
+
+        <form action="parametros.asp" method="post">
+            <select id="estados_id" name="estados" multiple="multiple">
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="PR">Paraná</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="BA">Bahia</option>
+            </select>
+
+            <select id="estado_id" name="estado">
+                <optgroup label="Região Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </optgroup>
+
+                <optgroup label="Região Sul">
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="PR">Paraná</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="BA">Bahia</option>
+                </optgroup>
+            </select>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>
