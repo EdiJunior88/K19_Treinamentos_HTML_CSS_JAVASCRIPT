@@ -1,0 +1,32 @@
+<!-- Autocomplete -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Autocomplete</title>
+    </head>
+    <body>
+        <h1>Autocomplete</h1>
+
+        <!-- Para melhorar a usabilidade, podemos utilizar o recurso do
+        autocomplete nas caixas de entrada. Para utilizar esse recurso,
+        devemos criar uma lista de sugestões com o elemento datalist.
+        É fundamental identificar as listas de sugestões com o atributo id.
+
+        As opções devem ser definidas no conteúdo do elemento datalist e
+        elas são adicionadas com o elemento option. O atributo value de
+        um elemento option define uma sugestão.
+
+        Com a lista de sugestões criada, podemos associá-la a uma caixa de
+        entrada através do atributo list do elemento input-->
+
+        <input id="comida_id" name="comida" type="text" list="comidas_id">
+        <datalist id="comidas_id">
+            <option value="Lasanha">
+            <option value="Pizza">
+            <option value="Sopa">
+            <option value="Salada">
+        </datalist>
+    </body>
+</html>
