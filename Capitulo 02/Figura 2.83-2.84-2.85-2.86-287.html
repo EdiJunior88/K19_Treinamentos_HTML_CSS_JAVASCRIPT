@@ -1,0 +1,75 @@
+<!-- Validação -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Validação</title>
+    </head>
+    <body>
+        <h1>Validação</h1>
+
+        <!-- Alguns recursos para realizar a validação dos campos de
+        um formulário foram adicionados no HTML5. Essas validações
+        ocorrem antes do envio dos formulários. Por padrão, algumas
+        validações são realizadas automaticamente de acordo com o
+        tipo do campo. Por exemplo, os navegadores verificam se o
+        conteúdo de uma caixa de email é um email válido. -->
+
+        <label for="email_id">Email: </label>
+        <input id="email_id" name="email" type="email">
+        <input type="submit" value="Enviar">
+
+        <br>
+        <br>
+
+        <!-- Os navegadores também verificam se o conteúdo de uma caixa
+        de URL é uma url válida. -->
+
+        <label for="url_id">URL: </label>
+        <input id="url_id" name="url" type="url">
+        <input type="submit" value="Enviar">
+
+        <br>
+        <br>
+
+        <!-- Outras validações devem ser definidas explicitamente. Por exemplo,
+        se um determinado campo obrigatório, devemos utilizar o atributo
+        required. Esse atributo não precisa de valor. -->
+
+        <label for="nome_id">Nome: </label>
+        <input id="nome_id" name="nome" type="text" required>
+        <input type="submit" value="Enviar">
+
+        <br>
+        <br>
+
+        <!-- Se um determinado campo deve respeitar uma expressão regular,
+        devemos utilizar o atributo pattern -->
+
+        <label for="placa_id">Placa: </label>
+        <input
+                id="placa_id"
+                name="placa"
+                type="text"
+                pattern="[A-Z]{3} [0-9]{4}"
+                title="As placas são formadas por 3 letras ou 4 números">
+        <input type="submit" value="Enviar">
+
+        <br>
+        <br>
+
+        <!-- Se o conteúdo de um campo numérico deve estar em um determinado
+        intervalo, podemo utilizar os atributos min e max -->
+
+        <label for="idade_id">Idade: </label>
+        <input
+                id="idade_id"
+                name="idade"
+                type="number"
+                min="18"
+                max="60"
+                title="A idade mínima é de 18 e a máxima é 60">
+        <input type="submit" value="Enviar">
+    </body>
+</html>
