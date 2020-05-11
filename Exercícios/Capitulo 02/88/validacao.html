@@ -1,0 +1,31 @@
+<!-- EXERCÍCIO 88 - Código HTML 2.146 -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Exercício de Validação</title>
+    </head>
+    <body>
+        <form action="parametros.asp" method="post">
+            <label for="nome_id">Nome: </label>
+            <input id="nome_id" name="nome" type="text" required>
+
+            <label for="email_id">Email: </label>
+            <input id="email_id" name="emmail" type="email">
+
+            <label for="url_id">URL: </label>
+            <input id="url_id" name="url" type="url">
+
+            <label for="placa_id">Placa</label>
+            <input
+                    id="placa_id"
+                    name="placa"
+                    type="text"
+                    pattern="[A-Z]{3} [0-9]{4}"
+                    title="As placas são formadas por 3 letras ou  4 números">
+
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>
