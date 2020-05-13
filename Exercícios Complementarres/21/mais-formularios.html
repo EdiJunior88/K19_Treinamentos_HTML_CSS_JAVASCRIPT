@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Currículo</title>
+    </head>
+    <body>
+        <h1>Cadastro de Currículo</h1>
+        <form action="parametros.asp" method="post">
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                <label for="nome_id">Nome: </label>
+                <input id="nome_id" type="text" name="nome" placeholder="Digite o seu nome">
+
+                <br>
+
+                <label for="email_id">Email: </label>
+                <input id="email_id" type="text" name="email" placeholder="Digite o seu email">
+
+                <br>
+
+                <label for="nascimento_id">Data de Nascimento: </label>
+                <input id="nascimento_id" type="date" name="nascimento">
+
+                <br>
+
+                <label for="altura_id">Altura(m): </label>
+                <input id="altura_id" type="number" name="altura">
+
+                <br>
+
+                <label for="site_id">Site: </label>
+                <input id="site_id" type="url" name="site" placeholder="Facebook, Linkedin,">
+
+                <br>
+
+                <label>Estado Civil: </label>
+                <select>
+                    <option>Selecione</option>
+                    <option>Solteiro(a)</option>
+                    <option>Casado(a)</option>
+                    <option>Divorciado(a)</option>
+                    <option>Viúvo(a)</option>
+                </select>
+
+                <br>
+
+                <label for="sexo1_id">Sexo: </label>
+                <input id="sexo1_id" type="checkbox" name="sexo1">
+                <label>Masculino</label>
+                <input id="sexo2_id" type="checkbox" name="sexo2">
+                <label>Feminino</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Endereço</legend>
+                <label for="cep_id">CEP: </label>
+                <input id="cep_id" type="number" name="cep">
+
+                <br>
+
+                <label for="endereco_id">Endereço: </label>
+                <input id="endereco_id" type="text" name="endereço">
+            </fieldset>
+
+            <fieldset>
+                <legend>Contato</legend>
+                <label for="telefone_id">Telefone: </label>
+                <input id="telefone_id" type="number" name="telefone">
+
+                <br>
+
+                <label for="celular_id">Celular: </label>
+                <input id="celular_id" type="number" name="celular">
+            </fieldset>
+
+            <fieldset>
+                <legend>Conhecimentos</legend>
+                <input id="html_id" type="checkbox" name="html">
+                <label for="html_id">HTML</label>
+
+                <input id="css_id" type="checkbox" name="css">
+                <label for="css_id">CSS</label>
+
+                <input id="javascript_id" type="checkbox" name="javascript">
+                <label for="javascript_id">JavaScript</label>
+
+                <br>
+
+                <label>Mais conhecimentos</label>
+                <textarea name="caixa_texto" rows="10">Digite os seus conhecimentos</textarea>
+            </fieldset>
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>
