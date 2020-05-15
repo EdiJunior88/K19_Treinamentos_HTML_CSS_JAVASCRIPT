@@ -1,0 +1,7 @@
+/* Assim como a função hsl(), a função hsla() também permite a seleção das cores
+através da escala HSL. A diferença é que a última permite que a opacidade da cor
+seja definida.*/
+
+p{
+    color: hsla(180,50%,60%,0.5);
+}

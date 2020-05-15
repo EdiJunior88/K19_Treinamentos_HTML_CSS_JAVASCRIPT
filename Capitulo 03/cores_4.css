@@ -1,0 +1,6 @@
+/* Essa função recebe 3 parâmetros. O primeiro deve ser
+um valor inteiro de 0 até 360. O segundo e o terceiro são porcetagens*/
+
+p{
+    color: hsl(180,50%,60%);
+}
