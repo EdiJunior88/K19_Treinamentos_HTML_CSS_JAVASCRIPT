@@ -1,0 +1,6 @@
+/* Por exemplo, para definir a cor blue com 50% de opacidade, podemos utilizar
+a função rgba() com os seguintes parâmetros. */
+
+p{
+    color: rgba(0,0,255,0.5);
+}
