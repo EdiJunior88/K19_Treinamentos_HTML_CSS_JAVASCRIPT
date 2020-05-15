@@ -1,0 +1,7 @@
+/* url(’url’) - URL da imagem de background.
+   none - Sem imagem de background (padrão).
+   inherit - Assume o valor da mesma propriedade no elemento HTML pai.*/
+
+p{
+    background-image: url("../image/background_2.jpg");
+}

@@ -1,14 +1,14 @@
 /* transparent - Faz o background ser transparente (padrão).
    inherit - Assume o valor da mesma propriedade no elemento HTML pai.*/
 
-p.texto{
+p.yellow{
     background-color: yellow;
 }
 
-p.texto2{
+p.c1a4cd{
     background-color: #c1a4cd;
 }
 
-p.texto3{
+p.transparent{
     background-color: transparent;
 }

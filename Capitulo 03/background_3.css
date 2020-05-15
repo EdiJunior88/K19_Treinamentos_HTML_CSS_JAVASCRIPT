@@ -1,0 +1,25 @@
+/* repeat - A imagem de background é replicada na horizontal e na vertical (padrão).
+   repeat-x - A imagem de background é replicada apenas na horizontal.
+   repeat-y - A imagem de background é replicada apenas na vertical.
+   no-repeat - A imagem não é replicada.
+   inherit - Assume o valor da mesma propriedade no elemento HTML pai. */
+
+p.repeat{
+    background-image: url("../image/attention.png");
+    background-repeat: repeat;
+}
+
+p.repeat-x{
+    background-image: url("../image/attention.png");
+    background-repeat: repeat-x;
+}
+
+p.repeat-y{
+    background-image: url("../image/attention.png");
+    background-repeat: repeat-y;
+}
+
+p.no-repeat{
+    background-image: url("../image/attention.png");
+    background-repeat: no-repeat;
+}
