@@ -1,0 +1,57 @@
+body{
+    background-image: url("../image/HTML5.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+/*
+
+body{
+    background-image: url("../image/HTML5.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+body{
+    background-image: url("../image/HTML5.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+body{
+    background-image: url("../image/HTML5.jpg");
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+body{
+    background-image: url("../image/HTML5.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+body{
+    background-image: url("../image/HTML5.jpg");
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+body{
+    background-image: url("../image/HTML5.jpg");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+body{
+    background-image: url("../image/HTML5.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+body{
+    background-image: url("../image/HTML5.jpg");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+*/
