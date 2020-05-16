@@ -1,0 +1,43 @@
+/*  auto auto - Tamanho original da imagem (padrão).
+    auto - O mesmo que "auto auto".
+    medida auto - A medida corresponde à largura. A altura é calculada de forma
+    proporcional à largura.
+    auto medida - A medida corresponde à altura. A largura é calculada de forma
+    proporcional à altura.
+    medida1 medida2 A medida1 corresponde à largura e a medida2 à altura.
+    x% y% - O valor x corresponde à largura e o y à altura. Esses valores são
+    porcentagens relativas à dimensão do elemento HTML.
+    x% auto - O valor x corresponde à largura. Esse valor é uma porcentagem
+    relativa à largura do elemento HTML. A altura é calculada automaticamente
+    de forma proporcional a largura.
+    auto y% - O valor y corresponde à altura. Esse valor é uma porcentagem
+    relativa à altura do elemento HTML. A largura é calculada automaticamente de
+    forma proporcional a altura.
+    cover - A imagem de background é redimensionada proporcionalmente de tal
+    forma a cobrir toda a área do elemento HTML.
+    contain - A imagem de background é redimensionada proporcionalmente de tal
+    forma a ter o maior tamanho possível sem extrapolar a área do elemento HTML. */
+
+p.porcentagem{
+    border: 3px solid black;
+    padding: 35px;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-image: url("../image/youtube.png");
+}
+
+p.cover{
+    border: 3px solid black;
+    padding: 35px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../image/youtube.png");
+}
+
+p.contain{
+    border: 3px solid black;
+    padding: 35px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../image/youtube.png");
+}

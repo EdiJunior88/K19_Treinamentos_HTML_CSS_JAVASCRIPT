@@ -1,0 +1,30 @@
+/* border-box Canto superior esquerdo da área delimitada pelas bordas.
+   padding-box Canto superior esquerdo da área delimitada pelas margens internas (padrão).
+   content-box Canto superior esquerdo da área delimitada pelo conteúdo */
+
+p.border-box{
+    border: 10px dotted black;
+    padding: 15px;
+    background: yellow;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-image: url("../image/webchat.png");
+}
+
+p.padding-box{
+    border: 10px dotted black;
+    padding: 15px;
+    background: yellow;
+    background-origin: padding-box;
+    background-repeat: no-repeat;
+    background-image: url("../image/webchat.png");
+}
+
+p.conten-box{
+    border: 10px dotted black;
+    padding: 15px;
+    background: yellow;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-image: url("../image/webchat.png");
+}

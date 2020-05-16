@@ -1,0 +1,24 @@
+/* border-box - Área delimitada pelas bordas (padrão).
+   padding-box - Área delimitada pelas margens internas.
+   content-box - Área delimitada pelo conteúdo. */
+
+p.border-box{
+    border: 10px dotted black;
+    padding: 15px;
+    background: yellow;
+    background-clip: border-box;
+}
+
+p.padding-box{
+    border: 10px dotted black;
+    padding: 15px;
+    background: yellow;
+    background-clip: padding-box;
+}
+
+p.conten-box{
+    border: 10px dotted black;
+    padding: 15px;
+    background: yellow;
+    background-clip: content-box;
+}
