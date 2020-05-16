@@ -1,0 +1,7 @@
+/* scroll - O background acompanha a rolagem do conteúdo (padrão).
+   fixed - O background não acompanha a rolagem do conteúdo. */
+
+body{
+    background-image: url("../image/background_5.jpg");
+    background-attachment: fixed;
+}
