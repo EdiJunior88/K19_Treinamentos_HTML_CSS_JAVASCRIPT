@@ -1,0 +1,21 @@
+/* normal - As palavras são divididas apenas nos “pontos de quebras” definidos
+   com o elemento wbr (padrão).
+   break-word - As palavras podem ser divididas em qualquer ponto. */
+
+div.a{
+    width: 98px;
+    border: 1px solid #000000;
+}
+
+div.b{
+    width: 98px;
+    border: 1px solid #000000;
+}
+
+p.normal{
+    word-wrap: normal;
+}
+
+p.break-word{
+    word-wrap: break-word;
+}
