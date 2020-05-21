@@ -1,0 +1,35 @@
+/* text-shadow: 10px    /// deslocamento horizontal
+                10px    /// deslocamento horizontal
+                10px    /// esccimento (opcional)
+                #ff0000 /// cor (opcional) */
+
+p.text-shadow1{
+    font-size: 50px;
+    text-shadow: 10px 10px #ff0000;
+}
+
+p.text-shadow2{
+    font-size: 50px;
+    text-shadow: -10px -10px #ff0000;
+}
+
+p.text-shadow3{
+    font-size: 50px;
+    text-shadow: 0 0 10px #ff0000;
+}
+
+p.text-shadow4{
+    font-size: 50px;
+    text-shadow: 10px 10px 10px #ff0000;
+}
+
+p.text-shadow5{
+    font-size: 50px;
+    text-shadow: -10px -10px 10px #ff0000;
+}
+
+p.text-shadow6{
+    font-size: 50px;
+    text-shadow: 10px 10px 10px #ff0000,
+                 -10px -10px 10px #0000ff;
+}
