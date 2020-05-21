@@ -1,0 +1,20 @@
+/* left - Alinhado à esquerda (padrão).
+   right - Alinhado à direita.
+   center - Centralizado.
+   justify - Justificado.  */
+
+p.left{
+    text-align: left;
+}
+
+p.center{
+    text-align: center;
+}
+
+p.right{
+    text-align: right;
+}
+
+p.justify{
+    text-align: justify;
+}

@@ -1,0 +1,9 @@
+/*  Podemos definir a cor do texto contido em um elemento HTML através
+    da propriedade color.
+
+    color Uma cor CSS.
+    inherit Assume o valor da mesma propriedade no elemento HTML pai. */
+
+p{
+    color: blue;
+}
