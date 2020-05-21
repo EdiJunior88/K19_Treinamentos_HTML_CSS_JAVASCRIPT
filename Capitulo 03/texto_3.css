@@ -1,0 +1,21 @@
+/* none - Texto sem decoração (padrão).
+   underline - Texto com traço inferior.
+   overline - Texto com traço superior.
+   line-through - Texto riscado.
+   inherit - Assume o valor da mesma propriedade no elemento HTML pai */
+
+p.none{
+    text-decoration: none;
+}
+
+p.underline{
+    text-decoration: underline;
+}
+
+p.overline{
+    text-decoration: overline;
+}
+
+p.line-through{
+    text-decoration: line-through;
+}

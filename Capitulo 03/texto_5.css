@@ -1,0 +1,12 @@
+/* medida - A medida corresponde ao tamanho da indentação.
+   x% - O valor x é o tamanho da indentação em porcentagem relativa à largura
+   do elemento HTML pai.
+   inherit - Assume o valor da mesma propriedade no elemento HTML pai. */
+
+p.text-20px{
+    text-indent: 20px;
+}
+
+p.text-0px{
+    text-indent: 0;
+}

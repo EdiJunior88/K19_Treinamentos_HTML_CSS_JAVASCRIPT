@@ -1,0 +1,16 @@
+/* normal - Espaçamento padrão definido para a fonte utilizada (padrão).
+   medida - A medida corresponde ao espaçamento extra desejado. Esse valor pode
+   ser negativo.
+   inherit - Assume o valor da mesma propriedade no elemento HTML pai. */
+
+p.text-normal{
+    letter-spacing: normal;
+}
+
+p.text-10px{
+    letter-spacing: 10px;
+}
+
+p.text--2px{
+    letter-spacing: -2px;
+}
