@@ -1,0 +1,14 @@
+/* normal - Altura padrão de linha (padrão).
+   x - A altura das linhas é o produto do valor x pelo tamanho da fonte atual.
+   medida - A medida corresponde à altura das linhas.
+   x% - O valor x é a altura das linhas em porcentagem relativa ao tamanho da
+   fonte atual.
+   inherit - Assume o valor da mesma propriedade no elemento HTML pai. */
+
+p.text-normal{
+    line-height: normal;
+}
+
+p.text-20px{
+    line-height: 20px;
+}

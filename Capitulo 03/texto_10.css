@@ -1,0 +1,73 @@
+/* normal - Sequências de espaços em branco contidas no código HTML são tratadas como um
+   único espaço. As quebras de linha contidas no código HTML não geram quebras de
+   linha na página renderizada. Quebras de linha automáticas são inseridas quando
+   necessário (padrão).
+
+   nowrap - Sequências de espaços em branco contidas no código HTML são tratadas como um
+   único espaço. As quebras de linha contidas no código HTML não geram quebras
+   de linha na página renderizada. Nenhuma quebra de linha é inserida automaticamente.
+
+   pre - Sequências de espaços em branco são completamente consideradas. As quebras
+   de linha contidas no código HTML geram quebras de linha na página renderizada.
+   Nenhuma quebra de linha é inserida automaticamente.
+
+   pre-line - Sequências de espaços em branco contidas no código HTML são tratados como
+   um único espaço. As quebras de linha contidas no código HTML geram quebras de
+   linha na página renderizada. Quebras de linha automáticas são inseridas quando
+   necessário.
+
+   pre-wrap - Sequências de espaços em branco são completamente consideradas. As quebras
+   de linha contidas no código HTML geram quebras de linha na página renderizada.
+   Quebras de linha automáticas são inseridas quando necessário.
+
+   inherit - Assume o valor da mesma propriedade no elemento HTML pai. */
+
+div.a{
+    width: 300px;
+    border: 1px solid #000000;
+}
+
+div.b{
+    width: 300px;
+    border: 1px solid #000000;
+}
+
+div.c{
+    width: 300px;
+    border: 1px solid #000000;
+}
+
+div.d{
+    width: 300px;
+    border: 1px solid #000000;
+}
+
+div.e{
+    width: 300px;
+    border: 1px solid #000000;
+}
+
+div.f{
+    width: 300px;
+    border: 1px solid #000000;
+}
+
+p.normal{
+    white-space: normal;
+}
+
+p.nowrap{
+    white-space: nowrap;
+}
+
+p.pre{
+    white-space: pre;
+}
+
+p.pre-line{
+    white-space: pre-line;
+}
+
+p.pre-wrap{
+    white-space: pre-wrap;
+}
