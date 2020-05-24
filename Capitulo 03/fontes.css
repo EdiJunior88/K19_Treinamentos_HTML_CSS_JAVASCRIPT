@@ -1,0 +1,46 @@
+/* xx-small - Tamanho de fonte extra extra pequeno.
+   x-small - Tamanho de fonte extra pequeno.
+   small - Tamanho de fonte pequeno.
+   medium - Tamanho de fonte médio (padrão).
+   large - Tamanho de fonte grande.
+   x-large - Tamanho de fonte extra grande.
+   xx-large - Tamanho de fonte extra extra grande.
+   smaller - Um tamanho de fonte menor do que o do elemento HTML pai.
+   larger - Um tamanho de fonte maior do que o do elemento HTML pai.
+   medida - A medida corresponde ao tamanho da fonte.
+   x% - O valor x é o tamanho da fonte. Esse valor é uma porcentagem do
+   tamanho da fonte do elemento HTML pai.
+   inherit - Assume o valor da mesma propriedade no elemento HTML pai. */
+
+p.font-9px{
+    font-size: 9px;
+}
+
+p.xx-small{
+    font-size: xx-small;
+}
+
+p.x-small{
+    font-size: x-small;
+}
+
+p.small{
+    font-size: small;
+}
+
+p.medium{
+    font-size: medium;
+}
+
+p.large{
+    font-size: large;
+}
+
+p.x-large{
+    font-size: x-large;
+}
+
+p.xx-large{
+    font-size: xx-large;
+}
+
