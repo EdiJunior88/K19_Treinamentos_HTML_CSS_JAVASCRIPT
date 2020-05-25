@@ -1,0 +1,14 @@
+@font-face {
+    src: local("Oregano Regular");
+    src: local("Bangers");
+}
+
+p.Oregano{
+    font-size: 25px;
+    font-family: "Oregano Regular";
+}
+
+p.Bangers{
+    font-size: 25px;
+    font-family: Bangers;
+}

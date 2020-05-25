@@ -1,0 +1,62 @@
+/* normal - Grossura normal (padrão).
+   bold - Negrito.
+   100 - Grossura 100.
+   200 - Grossura 200.
+   300 - Grossura 300.
+   400 - Grossura 400. Equivale ao valor “normal”
+   500 - Grossura 500.
+   600 - Grossura 600.
+   700 - Grossura 700. Equivale ao valor “bold”
+   800 - Grossura 800.
+   900 - Grossura 900.
+   bolder - Uma grossura maior do que a do elemento HTML pai.
+   lighter - Uma grossura menor do que a do elemento HTML pai.
+   inherit - Assume o valor da mesma propriedade no elemento HTML pai.*/
+
+p{
+    font-family: "Roboto Light";
+}
+
+p.font-normal{
+    font-weight: normal;
+}
+
+p.font-bold{
+    font-weight: bold;
+}
+
+p.font-100{
+    font-weight: 100;
+}
+
+p.font-200{
+    font-weight: 200;
+}
+
+p.font-300{
+    font-weight: 300;
+}
+
+p.font-400{
+    font-weight: 400;
+}
+
+p.font-500{
+    font-weight: 500;
+}
+
+p.font-600{
+    font-weight: 600;
+}
+
+p.font-700{
+    font-weight: 700;
+}
+
+p.font-800{
+    font-weight: 800;
+}
+
+p.font-900{
+    font-weight: 900;
+}

@@ -1,0 +1,11 @@
+/* normal - Fonte normal (padrão).
+   small-caps - Fonte em small caps.
+   inherit - Assume o valor da mesma propriedade no elemento HTML pai. */
+
+p.normal{
+    font-variant: normal;
+}
+
+p.small-caps{
+    font-variant: small-caps;
+}
