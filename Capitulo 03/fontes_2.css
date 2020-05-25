@@ -1,0 +1,16 @@
+/* normal - Fonte normal (padrão).
+   italic - Fonte itálica.
+   oblique - Fonte oblíqua.
+   inherit - Assume o valor da mesma propriedade no elemento HTML pai. */
+
+p.normal{
+    font-style: normal;
+}
+
+p.italic{
+    font-style: italic;
+}
+
+p.oblique{
+    font-style: oblique;
+}
