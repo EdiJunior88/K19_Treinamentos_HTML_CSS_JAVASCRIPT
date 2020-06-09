@@ -1,0 +1,10 @@
+/* É possível definir uma imagem para ser utilizada nos itens de
+   uma determinada lista com a propriedade list-style-image.
+
+   url(“url”) - URL da imagem.
+   none - Sem imagem (padrão).
+   inherit - Assume o valor da mesma propriedade no elemento HTML pai. */
+
+ul.image{
+    list-style-image: url("../image/estrela.png");
+}

@@ -1,0 +1,52 @@
+/* Podemos definir o símbolo utilizado nos itens de uma determinada
+lista com a propriedade liststyle-type. A listagem completa desses símbolos
+pode ser consultada no endereço http://www.w3.org/TR/css3-lists/#ua-stylesheet.*/
+
+ul.disc{
+    list-style-type: disc;
+}
+
+ul.circle{
+    list-style-type: circle;
+}
+
+ul.square{
+    list-style-type: square;
+}
+
+ul.decimal{
+    list-style-type: decimal;
+}
+
+ul.upper_roman{
+    list-style-type: upper-roman;
+}
+
+ul.lower_roman{
+    list-style-type: lower-roman;
+}
+
+ul.upper_alpha{
+    list-style-type: upper-alpha;
+}
+
+ul.lower_alpha{
+    list-style-type: lower-alpha;
+}
+
+ul.hebrew{
+    list-style-type: hebrew;
+}
+
+ul.lower_greek{
+    list-style-type: lower-greek;
+}
+
+ul.katakana{
+    list-style-type: katakana;
+}
+
+ul.cjk-ideographic{
+    list-style-type: cjk-ideographic;
+}
+
