@@ -1,0 +1,20 @@
+/* Por padrão, os bullets de uma lista não são exibidos dentro dos boxes dos
+   itens. Podemos alterar esse comportamento através da propriedade
+   list-style-position.
+
+   inside - Os bullets são exibidos dentro dos boxes dos itens.
+   outside - Os bullets não são exibidos dentro dos boxes dos itens. (padrão).
+   inherit - Assume o valor da mesma propriedade no elemento HTML pai */
+
+li{
+    border: 2px dotted;
+    width: 150px;
+}
+
+ul.outside{
+    list-style-position: outside;
+}
+
+ul.inside{
+    list-style-position: inside;
+}
