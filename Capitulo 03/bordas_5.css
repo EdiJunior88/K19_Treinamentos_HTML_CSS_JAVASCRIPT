@@ -1,0 +1,51 @@
+/* Bordas com cantos arredondados podem ser definidas com a propriedade
+   border-radius.
+
+   medida - A medida corresponde ao raio.
+   x% - O valor x é o raio em porcentagem. */
+
+p{
+    border: solid;
+    width: 220px;
+    padding: 30px;
+}
+
+p.radius1{
+    border-color: red;
+    border-radius: 10px;
+}
+
+p.radius2{
+    border-color: green;
+    border-radius: 10px 5px;
+}
+
+p.radius3{
+    border-color: blue;
+    border-radius: 10px 5px 20px;
+}
+
+p.radius4{
+    border-color: blueviolet;
+    border-radius: 10px 5px 20px 3px;
+}
+
+p.radius5{
+    border-color: chartreuse;
+    border-top-left-radius: 10px;
+}
+
+p.radius6{
+    border-color: orange;
+    border-top-right-radius: 10px;
+}
+
+p.radius7{
+    border-color: crimson;
+    border-bottom-right-radius: 10px;
+}
+
+p.radius8{
+    border-color: dodgerblue;
+    border-bottom-left-radius: 10px;
+}
