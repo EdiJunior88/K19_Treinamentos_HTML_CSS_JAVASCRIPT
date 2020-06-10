@@ -1,0 +1,49 @@
+/* Podemos definir o estilo das bordas de um elemento HTML com a
+   propriedade border-style. Veja os principais valores dessa
+   propriedade:
+
+   dotted
+   dashed
+   solid
+   double
+   groove
+   ridge
+   inset
+   outset */
+
+p{
+    width: 150px;
+    padding: 5px;
+}
+
+p.dotted{
+    border-style: dotted;
+}
+
+p.dashed{
+    border-style: dashed;
+}
+
+p.solid{
+    border-style: solid;
+}
+
+p.double{
+    border-style: double;
+}
+
+p.groove{
+    border-style: groove;
+}
+
+p.ridge{
+    border-style: ridge;
+}
+
+p.inset{
+    border-style: inset;
+}
+
+p.outset{
+    border-style: outset;
+}

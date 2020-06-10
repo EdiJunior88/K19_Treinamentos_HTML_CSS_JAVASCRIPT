@@ -1,0 +1,32 @@
+/* A grossura das bordas pode ser determinada com a propriedade
+   border-width.
+
+   thin - Borda fina.
+   medium - Borda média (padrão).
+   thick - Borda grossa.
+   medida - A medida corresponde à grossura da borda.
+   inherit - Assume o valor da mesma propriedade no elemento HTML pai */
+
+p.thin{
+    padding: 10px;
+    border-style: solid;
+    border-width: thin;
+}
+
+p.medium{
+    padding: 10px;
+    border-style: solid;
+    border-width: medium;
+}
+
+p.thick{
+    padding: 10px;
+    border-style: solid;
+    border-width: thick;
+}
+
+p.medida10px{
+    padding: 10px;
+    border-style: solid;
+    border-width: 10px;
+}
