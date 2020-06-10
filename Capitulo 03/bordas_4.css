@@ -1,0 +1,32 @@
+/* O estilo, a grossura e a cor podem ser definidos individualmente
+   para a borda da esquerda, borda superior, borda da direita e borda
+   inferior de um elemento HTML */
+
+p{
+    padding: 80px;
+    width: 100px;
+    border-width: 10px;
+}
+
+p.p1{
+    border: solid 20px;
+
+    border-top-style: dashed;
+    border-top-color: blue;
+
+    border-right-style: solid;
+    border-right-color: green;
+
+    border-bottom-style: groove;
+    border-bottom-color: orange;
+
+    border-left-style: dotted;
+    border-left-color: red;
+}
+
+p.p2{
+    border-top: 20px dashed blue;
+    border-right: 20px solid green;
+    border-bottom: 20px groove orange;
+    border-left: 20px dotted red;
+}
