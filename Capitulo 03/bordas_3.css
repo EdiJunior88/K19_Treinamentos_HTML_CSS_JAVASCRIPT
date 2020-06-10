@@ -1,0 +1,23 @@
+/* A propriedade border-color define a cor das bordas de um elemento
+   HTML. Essa propriedade aceita o valor transparent(padrão) ou qualquer
+   cor CSS.
+
+   color - Uma cor CSS.
+   transparent - Faz a borda ser transparente.
+   inherit - Assume o valor da mesma propriedade no elemento HTML pai. */
+
+p.color{
+    border-style: solid;
+    border-width: thick;
+    padding: 20px;
+    width: 150px;
+    border-color: green;
+}
+
+p.transparent{
+    border-style: solid;
+    border-width: thick;
+    padding: 20px;
+    width: 150px;
+    border-color: transparent;
+}
