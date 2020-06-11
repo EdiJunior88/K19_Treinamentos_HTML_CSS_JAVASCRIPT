@@ -1,0 +1,32 @@
+/* A grossura dos outlines pode ser determinada com a propriedade
+   outline-width.
+
+   thin - Outline fina.
+   medium - Outline média (padrão).
+   thick - Outline grossa.
+   medida - A medida corresponde à grossura do outline.
+   inherit - Assume o valor da mesma propriedade no elemento HTML pai */
+
+p.thin{
+    padding: 10px;
+    outline-style: solid;
+    outline-width: thin;
+}
+
+p.medium{
+    padding: 10px;
+    outline-style: solid;
+    outline-width: medium;
+}
+
+p.thick{
+    padding: 10px;
+    outline-style: solid;
+    outline-width: thick;
+}
+
+p.medida10px{
+    padding: 10px;
+    outline-style: solid;
+    outline-width: 10px;
+}

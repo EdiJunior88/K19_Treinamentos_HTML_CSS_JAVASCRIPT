@@ -1,0 +1,18 @@
+/* Podemos definir a distância do outline de um elemento HTML em
+   relação às bordas do mesmo com a propriedade outline-offset.
+
+   medida - A medida corresponde ao tamanho do outline-offset
+   (0px é o valor padrão). Esse valor pode ser negativo.
+   inherit - Assume o valor da mesma propriedade no elemento HTML pai. */
+
+mark.outline10px{
+    border: 2px dashed black;
+    outline: 2px solid red;
+    outline-offset: 10px;
+}
+
+mark.outline-5px{
+    border: 2px dashed black;
+    outline: 2px solid red;
+    outline-offset: -5px;
+}
