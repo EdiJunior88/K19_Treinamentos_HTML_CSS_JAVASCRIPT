@@ -1,0 +1,21 @@
+/* Podemos definir bordas para cada célula de uma tabela e para a
+   própria tabela. Por padrão, essas bordas são exibidas separadamente.
+   Mas, é possível determinar que duas bordas “vizinhas” sejam exibidas
+   como se fossem uma só com a propriedade border-collapse.
+
+   separate - Bordas separadas (padrão).
+   collapse - Bordas unidades.
+   inherit - Assume o valor da mesma propriedade no elemento HTML pai. */
+
+table, td, tr{
+    border: solid black;
+    padding: 5px;
+}
+
+.separate, td{
+    border-collapse: separate;
+}
+
+.collapse, td{
+    border-collapse: collapse;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Bordas</title>
+        <link rel="stylesheet" type="text/css" href="../Capitulo%2003/bordas_6.css">
+    </head>
+    <body>
+        <h1>Bordas</h1>
+        <h3><i>border-collapse</i></h3>
+
+        <!-- Podemos definir bordas para cada célula de uma tabela e para a
+        própria tabela. Por padrão, essas bordas são exibidas separadamente.
+        Mas, é possível determinar que duas bordas “vizinhas” sejam exibidas
+        como se fossem uma só com a propriedade border-collapse.
+
+        separate - Bordas separadas (padrão).
+        collapse - Bordas unidades.
+        inherit - Assume o valor da mesma propriedade no elemento HTML pai. -->
+
+        <p>border-collapse: separate</p>
+        <table class="separate">
+            <tr>
+                <td>Célula 1</td>
+                <td>Célula 2</td>
+            </tr>
+            <tr>
+                <td>Célula 3</td>
+                <td>Célula 4</td>
+            </tr>
+        </table>
+
+        <p>border-collapse: collapse</p>
+        <table class="collapse">
+            <tr>
+                <td>Célula 1</td>
+                <td>Célula 2</td>
+            </tr>
+            <tr>
+                <td>Célula 3</td>
+                <td>Célula 4</td>
+            </tr>
+        </table>
+    </body>
+</html>

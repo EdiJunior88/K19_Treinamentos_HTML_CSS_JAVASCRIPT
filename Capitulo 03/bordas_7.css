@@ -1,0 +1,20 @@
+/* A propriedade border-spacing permite definir o espaçamento entre as
+   células de uma tabela. Essa propriedade afeta o espaçamento entre as bordas
+   somente se o valor da propriedade bordercollapse for separate.
+
+   medida1 medida2 - A medida1 corresponde ao espaçamento horizontal e a medida2
+   corresponde ao espaçamento vertical.
+   medida - A medida corresponde ao espaçamento horizontal e vertical.
+   inherit - Assume o valor da mesma propriedade no elemento HTML pai. */
+
+table, td, tr{
+    border: solid black;
+}
+
+.spacing1{
+    border-spacing: 5px;
+}
+
+.spacing2{
+    border-spacing: 10px 5px;
+}
