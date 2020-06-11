@@ -1,0 +1,73 @@
+/* Podemos definir o estilo do outline de um elemento HTML com a
+   propriedade outline-style. Veja os principais valores dessa
+   propriedade:
+
+   dotted
+   dashed
+   solid
+   double
+   groove
+   ridge
+   inset
+   outset */
+
+p{
+    width: 150px;
+    padding: 5px;
+}
+
+p.dotted{
+    outline-style: dotted;
+    outline-width: 6px;
+    outline-color: red;
+    border-style: solid;
+}
+
+p.dashed{
+    outline-style: dashed;
+    outline-width: 6px;
+    outline-color: red;
+    border-style: solid;
+}
+
+p.solid{
+    outline-style: solid;
+    outline-width: 6px;
+    outline-color: red;
+    border-style: solid;
+}
+
+p.double{
+    outline-style: double;
+    outline-width: 6px;
+    outline-color: red;
+    border-style: solid;
+}
+
+p.groove{
+    outline-style: groove;
+    outline-width: 6px;
+    outline-color: red;
+    border-style: solid;
+}
+
+p.ridge{
+    outline-style: ridge;
+    outline-width: 6px;
+    outline-color: red;
+    border-style: solid;
+}
+
+p.inset{
+    outline-style: inset;
+    outline-width: 6px;
+    outline-color: red;
+    border-style: solid;
+}
+
+p.outset{
+    outline-style: outset;
+    outline-width: 6px;
+    outline-color: red;
+    border-style: solid;
+}
