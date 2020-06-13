@@ -1,0 +1,44 @@
+/*  Os tamanhos das margens externas do box de elemento HTML podem ser
+    definidos individualmente com as propriedades margin-left, margin-top,
+    margin-right e margin-bottom.
+
+    auto - O tamanho da margem é calculado automaticamente pelos navegadores.
+    medida - A medida corresponde ao tamanho da margem (0px é o padrão).
+    x% - O valor x corresponde ao tamanho da margem. Esse valor é uma
+    porcentagem da largura do elemento HTML pai.
+    inherit - Assume o valor da mesma propriedade no elemento HTML pai. */
+
+div.margin-full{
+    background-color: orange;
+    width: 100px;
+    padding: 10px;
+    border: 0px solid black;
+}
+
+div.margin{
+    background-color: aqua;
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
+div.margin1{
+    background-color: red;
+    margin: 5px 10px 15px 20px;
+}
+
+div.margin2{
+    background-color: #FF00FF;
+    margin: 5px 10px 15px;
+}
+
+div.margin3{
+    background-color: chartreuse;
+    margin: 5px 10px;
+}
+
+div.margin4{
+    background-color: teal;
+    margin: 5px;
+}
