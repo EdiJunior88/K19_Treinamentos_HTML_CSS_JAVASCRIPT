@@ -1,0 +1,43 @@
+/*  Os tamanhos das margens externas do box de elemento HTML podem ser
+    definidos individualmente com as propriedades padding-left, padding-top,
+    padding-right e padding-bottom.
+
+    medida - A medida corresponde ao tamanho da margem (0px é o padrão).
+    x% - O valor x corresponde ao tamanho da margem. Esse valor é uma
+    porcentagem da largura do elemento HTML pai.
+    inherit - Assume o valor da mesma propriedade no elemento HTML pai. */
+
+div.padding-full{
+    text-align: justify;
+    margin: 0px;
+    width: 250px;
+    border: 2px dashed black;
+}
+
+div.padding{
+    background-color: aqua;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+}
+
+div.padding1{
+    background-color: red;
+    padding: 5px 10px 15px 20px;
+}
+
+div.padding2{
+    background-color: #FF00FF;
+    padding: 5px 10px 15px;
+}
+
+div.padding3{
+    background-color: chartreuse;
+    padding: 5px 10px;
+}
+
+div.padding4{
+    background-color: teal;
+    padding: 5px;
+}
