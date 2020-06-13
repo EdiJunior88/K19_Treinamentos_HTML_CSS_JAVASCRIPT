@@ -1,0 +1,28 @@
+div{
+    width: 600px;
+    border: 1px solid black;
+}
+
+p, a{
+    border: 1px solid black;
+}
+
+#p1{
+    margin: 5px 10px 20px 30px;
+    padding: 5px 0px 0px 20px;
+}
+
+#a1{
+    margin-left: 10px;
+    padding: 5px;
+}
+
+#a2{
+    margin-left: 20px;
+    padding: 10px;
+}
+
+#p2{
+    margin: 20px;
+    padding: 10px;
+}
