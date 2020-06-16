@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Display e Visibilidade</title>
+        <link rel="stylesheet" type="text/css" href="../Capitulo%2003/display_visibilidade_2.css">
+    </head>
+    <body>
+        <h1>Display e Visibilidade</h1>
+        <h3><i>visibility</i></h3>
+
+        <!-- Podemos determinar se um elemento HTML deve ser exibido ou não
+        através da propriedade visibility. O valor visible(padrão) indica que
+        o elemento deve ser exibido e o valor hidden indica que o elemento não
+        deve ser exibido.
+
+        visible - Visível (padrão).
+        hidden - Invisível.
+        inherit - Assume o valor da mesma propriedade no elemento HTML pai. -->
+
+        <p>visibility: visible</p>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+                semper laoreet massa at tincidunt. Donec eget vestibulum dui, eget
+                mollis tellus. Cras congue orci eget nibh porta suscipit. <span class="visible">Ut ut</span>
+                metus ac massa rhoncus feugiat id et justo. Morbi at metus magna.
+                Sed risus elit, cursus eget erat at, iaculis tincidunt dui. Ut
+                laoreet auctor vulputate. Vestibulum iaculis vitae eros at vehicula.
+            </p>
+        </div>
+
+        <p>visibility: hidden</p>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+                semper laoreet massa at tincidunt. Donec eget vestibulum dui, eget
+                mollis tellus. Cras congue orci eget nibh porta suscipit. <span class="hidden">Ut ut</span>
+                metus ac massa rhoncus feugiat id et justo. Morbi at metus magna.
+                Sed risus elit, cursus eget erat at, iaculis tincidunt dui. Ut
+                laoreet auctor vulputate. Vestibulum iaculis vitae eros at vehicula.
+            </p>
+        </div>
+
+        <!-- Na renderização, os elementos HTML com display: none são totalmente
+        desconsiderados. Em outras palavras, é como se eles simplesmente não
+        existissem. Dessa forma, eles não afetam o posicionamento dos demais
+        elementos. Por outro lado, os elementos HTML com visibility: hidden apesar
+        de não serem exibidos fazem parte da página renderizada e podem afetar o
+        posicionamento dos demais elementos pois o espaço ocupado por eles pode
+        não ser nulo. -->
+
+        <p>display: none</p>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+                semper laoreet massa at tincidunt. Donec eget vestibulum dui, eget
+                mollis tellus. Cras congue orci eget nibh porta suscipit. <span class="none">Ut ut</span>
+                metus ac massa rhoncus feugiat id et justo. Morbi at metus magna.
+                Sed risus elit, cursus eget erat at, iaculis tincidunt dui. Ut
+                laoreet auctor vulputate. Vestibulum iaculis vitae eros at vehicula.
+            </p>
+        </div>
+    </body>
+</html>

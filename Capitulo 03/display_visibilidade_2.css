@@ -1,0 +1,31 @@
+/* Podemos determinar se um elemento HTML deve ser exibido ou não
+   através da propriedade visibility. O valor visible(padrão) indica que
+   o elemento deve ser exibido e o valor hidden indica que o elemento não
+   deve ser exibido.
+
+   visible - Visível (padrão).
+   hidden - Invisível.
+   inherit - Assume o valor da mesma propriedade no elemento HTML pai. */
+
+div{
+    width: 500px;
+    border: 1px solid black;
+}
+
+span.visible{
+    padding: 15px;
+    background-color: rgba(0, 255, 0, 0.5);
+    visibility: visible;
+}
+
+span.hidden{
+    padding: 15px;
+    background-color: rgba(0, 255, 0, 0.5);
+    visibility: hidden;
+}
+
+span.none{
+    padding: 15px;
+    background-color: rgba(0, 255, 0, 0.5);
+    display: none;
+}
