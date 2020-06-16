@@ -1,0 +1,33 @@
+/* Podemos definir a opacidade dos elementos HTML com a propriedade
+   opacity.
+
+   x - O valor x é um número entre 0(totalmente transparente) e
+   1 (sem transparência, padrão).
+   inherit - Assume o valor da mesma propriedade no elemento HTML pai */
+
+p{
+    width: 130px;
+    padding: 40px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    border: 3px solid;
+    background-color: navy;
+}
+
+p.opacidade1{
+    opacity: 1;
+}
+
+p.opacidade2{
+    opacity: 0.75;
+}
+
+p.opacidade3{
+    opacity: 0.5;
+}
+
+p.opacidade4{
+    opacity: 0.25;
+}
