@@ -1,0 +1,59 @@
+/* A altura e a largura dos boxes dos elementos HTML podem ser definidas
+   com as propriedades height e width respectivamente.
+
+   auto - A altura ou largura são calculadas automaticamente pelos navegadores.
+   medida - A medida corresponde à largura ou a altura.
+   x% - A medida corresponde à largura ou a altura como porcentagem das
+   dimensões do elemento HTML pai.
+   inherit - Assume o valor da mesma propriedade no elemento HTML pai. */
+
+p.height-auto{
+    border: 1px solid green;
+    height: auto;
+}
+
+p.width-250px{
+    border: 1px solid green;
+    width: 250px;
+}
+
+/* A propriedade height é utilizada para determinar a altura exata do box
+   de um elemento HTML. Uma outra abordagem é definir um limite inferior e/ou
+   um limite superior para essa dimensão. Esses limites podem ser definidos
+   com as propriedades min-height e max-height.
+
+   none - Sem valor (padrão para max-height).
+   medida - A medida corresponde à altura máxima ou mínima desejada
+   (0px é padrão para min-height) */
+
+p.min-height{
+    border: 1px solid red;
+    min-height: auto;
+}
+
+p.max-height{
+    border: 1px solid red;
+    max-height: 25px;
+}
+
+/* A propriedade width é utilizada para determinar a largura exata do
+   box de um elemento HTML. Uma outra abordagem é definir um limite inferior
+   e/ou um limite superior para essa dimensão. Esses limites podem ser
+   definidos com as propriedades min-width e max-width.
+
+   none - Sem valor (padrão para max-width).
+   medida - A medida corresponde à largura máxima ou mínima desejada
+   (0px é padrão para min-width).
+   x% - O valor x corresponde à largura máxima ou mínima. Esse valor é uma
+   porcentagem da largura do elemento HTML pai.
+   inherit - Assume o valor da mesma propriedade no elemento HTML pai. */
+
+p.max-width{
+    border: 1px solid blue;
+    max-height: 150px;
+}
+
+p.min-width{
+    border: 1px solid blue;
+    min-width: auto;
+}
