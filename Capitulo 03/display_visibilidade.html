@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Display e Visibilidade</title>
+        <link rel="stylesheet" type="text/css" href="../Capitulo%2003/display_visibilidade.css">
+    </head>
+    <body>
+        <h1>Display e Visibilidade</h1>
+        <h3><i>display</i></h3>
+
+        <!-- A propriedade display define a forma de exibição dos elementos HTML.
+        Os 5 principais valores dessa propriedade são: inline(padrão), block,
+        inline-block, list-item e none.
+
+        inline - Considere o box de um elemento HTML com display: inline. Esse box
+        não gera quebras de linha e as suas dimensões são calculadas com base no
+        conteúdo do elemento HTML. As propriedades width e height não modificam a
+        largura e a altura do box. As margens e as bordas do box de um elemento
+        HTML com display: inline “empurram” os boxes vizinhos horizontalmente.
+        Verticalmente, os boxes vizinhos não são “empurrados”.
+        block - Considere o box de um elemento HTML com display: block. Esse box
+        gera quebras de linha e, por padrão, ocupa todo o espaço horizontal do
+        elemento pai. Podemos controlar a largura e a altura desse box com as
+        propriedades width e height.
+        inline-block - O comportamento dos boxes dos elementos HTML com display:
+        inline-block é similar ao dos boxes dos elementos HTML com display:
+        inline. Basicamente, a diferença entre eles é que podemos modificar a
+        largura e altura dos boxes dos elementos HTML com display: inline-block.
+        list-item - O comportamento dos boxes dos elementos HTML com display:
+        list-item é similar ao dos boxes dos elementos HTML com display: block.
+        Basicamente, a diferença entre eles é que um bullet é exibido no canto
+        esquerdo de box de um elemento HTML com display: list-item.
+        none - Os boxes dos elementos HTML com display: none não são exibidos e
+        não ocupam espaço na página.-->
+
+        <p>diaplay: inline</p>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+                semper laoreet massa at tincidunt. Donec eget vestibulum dui, eget
+                mollis tellus. Cras congue orci eget nibh porta suscipit. <span class="inline">Ut ut</span>
+                metus ac massa rhoncus feugiat id et justo. Morbi at metus magna.
+                Sed risus elit, cursus eget erat at, iaculis tincidunt dui. Ut
+                laoreet auctor vulputate. Vestibulum iaculis vitae eros at vehicula.
+            </p>
+        </div>
+
+        <p>diaplay: block</p>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+                semper laoreet massa at tincidunt. Donec eget vestibulum dui, eget
+                mollis tellus. Cras congue orci eget nibh porta suscipit. <span class="block">Ut ut</span>
+                metus ac massa rhoncus feugiat id et justo. Morbi at metus magna.
+                Sed risus elit, cursus eget erat at, iaculis tincidunt dui. Ut
+                laoreet auctor vulputate. Vestibulum iaculis vitae eros at vehicula.
+            </p>
+        </div>
+
+        <p>diaplay: inline-block</p>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+                semper laoreet massa at tincidunt. Donec eget vestibulum dui, eget
+                mollis tellus. Cras congue orci eget nibh porta suscipit. <span class="inline-block">Ut ut</span>
+                metus ac massa rhoncus feugiat id et justo. Morbi at metus magna.
+                Sed risus elit, cursus eget erat at, iaculis tincidunt dui. Ut
+                laoreet auctor vulputate. Vestibulum iaculis vitae eros at vehicula.
+            </p>
+        </div>
+
+        <p>diaplay: list-item</p>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+                semper laoreet massa at tincidunt. Donec eget vestibulum dui, eget
+                mollis tellus. Cras congue orci eget nibh porta suscipit.
+            <ul>
+                <li><span class="list-item">Ut ut</span></li>
+            </ul>
+                metus ac massa rhoncus feugiat id et justo. Morbi at metus magna.
+                Sed risus elit, cursus eget erat at, iaculis tincidunt dui. Ut
+                laoreet auctor vulputate. Vestibulum iaculis vitae eros at vehicula.
+            </p>
+        </div>
+
+        <p>diaplay: none</p>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+                semper laoreet massa at tincidunt. Donec eget vestibulum dui, eget
+                mollis tellus. Cras congue orci eget nibh porta suscipit. <span class="none">Ut ut</span>
+                metus ac massa rhoncus feugiat id et justo. Morbi at metus magna.
+                Sed risus elit, cursus eget erat at, iaculis tincidunt dui. Ut
+                laoreet auctor vulputate. Vestibulum iaculis vitae eros at vehicula.
+            </p>
+        </div>
+    </body>
+</html>

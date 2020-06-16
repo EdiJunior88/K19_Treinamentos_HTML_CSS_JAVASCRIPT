@@ -1,0 +1,59 @@
+/* A propriedade display define a forma de exibição dos elementos HTML.
+   Os 5 principais valores dessa propriedade são: inline(padrão), block,
+   inline-block, list-item e none.
+
+   inline - Considere o box de um elemento HTML com display: inline. Esse box
+   não gera quebras de linha e as suas dimensões são calculadas com base no
+   conteúdo do elemento HTML. As propriedades width e height não modificam a
+   largura e a altura do box. As margens e as bordas do box de um elemento
+   HTML com display: inline “empurram” os boxes vizinhos horizontalmente.
+   Verticalmente, os boxes vizinhos não são “empurrados”.
+   block - Considere o box de um elemento HTML com display: block. Esse box
+   gera quebras de linha e, por padrão, ocupa todo o espaço horizontal do
+   elemento pai. Podemos controlar a largura e a altura desse box com as
+   propriedades width e height.
+   inline-block - O comportamento dos boxes dos elementos HTML com display:
+   inline-block é similar ao dos boxes dos elementos HTML com display:
+   inline. Basicamente, a diferença entre eles é que podemos modificar a
+   largura e altura dos boxes dos elementos HTML com display: inline-block.
+   list-item - O comportamento dos boxes dos elementos HTML com display:
+   list-item é similar ao dos boxes dos elementos HTML com display: block.
+   Basicamente, a diferença entre eles é que um bullet é exibido no canto
+   esquerdo de box de um elemento HTML com display: list-item.
+   none - Os boxes dos elementos HTML com display: none não são exibidos e
+   não ocupam espaço na página. */
+
+div{
+    width: 500px;
+    border: 1px solid black;
+}
+
+span.inline{
+    padding: 15px;
+    background-color: rgba(255, 0, 0, 0.5);
+    display: inline;
+}
+
+span.block{
+    padding: 15px;
+    background-color: #00FFFF;
+    display: block;
+}
+
+span.inline-block{
+     padding: 15px;
+     background-color: #00FF00;
+     display: inline-block;
+}
+
+span.list-item{
+    padding: 15px;
+    background-color: #00FF00;
+    display: list-item;
+}
+
+span.none{
+    padding: 15px;
+    background-color: #00FF00;
+    display: none;
+}
