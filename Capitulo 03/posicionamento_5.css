@@ -1,0 +1,61 @@
+/* Os box dos elementos HTML próximos do box de um elemento HTML om
+   float diferente de none são “empurrados” horizontalmente à esquerda ou
+   à direita. Podemos determinar que, ao invés de serem “empurrados”
+   horizontalmente, eles sejam exibidos em uma nova linha através da
+   propriedade clear.
+
+   left - Não permite boxes flutuando à esquerda dele.
+   right - Não permite boxes flutuando à direita dele.
+   both - Não permite boxes flutuando nem à esquerda nem à direita dele.
+   one - Permite boxes flutuando à esquerda e à direita (padrão) dele.
+   inherit - Assume o valor da mesma propriedade no elemento HTML pai. */
+
+div{
+    border: 1px solid black;
+    height: 90px;
+    width: 230px;
+}
+
+img.img1{
+    height: 50px;
+    float: left;
+}
+
+img.img2{
+    height: 50px;
+    float: right;
+}
+
+img.img3{
+    height: 50px;
+    float: left;
+}
+
+img.img4{
+    height: 50px;
+    float: right;
+}
+
+p.none{
+    clear: none;
+}
+
+p.left{
+    clear: left;
+}
+
+p.none1{
+    clear: none;
+}
+
+p.right1{
+    clear: right;
+}
+
+p.none2{
+    clear: none;
+}
+
+p.both{
+    clear: both;
+}

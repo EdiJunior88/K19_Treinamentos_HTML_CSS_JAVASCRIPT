@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Posicionamento</title>
+        <link rel="stylesheet" type="text/css" href="../Capitulo%2003/posicionamento_5.css">
+    </head>
+    <body>
+        <h1>Posicionamento</h1>
+        <h3><i>clear</i></h3>
+
+        <!-- Os box dos elementos HTML próximos do box de um elemento HTML om
+        float diferente de none são “empurrados” horizontalmente à esquerda ou
+        à direita. Podemos determinar que, ao invés de serem “empurrados”
+        horizontalmente, eles sejam exibidos em uma nova linha através da
+        propriedade clear.
+
+        left - Não permite boxes flutuando à esquerda dele.
+        right - Não permite boxes flutuando à direita dele.
+        both - Não permite boxes flutuando nem à esquerda nem à direita dele.
+        none - Permite boxes flutuando à esquerda e à direita (padrão) dele.
+        inherit - Assume o valor da mesma propriedade no elemento HTML pai.-->
+
+        <div>
+            <img class="img1" src="../image/Image%20CSS.jpg">
+            <p class="none">clear: none</p>
+        </div>
+
+        <br>
+
+        <div>
+            <img class="img1" src="../image/Image%20CSS.jpg">
+            <p class="left">clear: left</p>
+        </div>
+
+        <br>
+
+        <div>
+            <img class="img2" src="../image/Image%20CSS.jpg">
+            <p class="none1">clear: none</p>
+        </div>
+
+        <br>
+
+        <div>
+            <img class="img2" src="../image/Image%20CSS.jpg">
+            <p class="right1">clear: right</p>
+        </div>
+
+        <br>
+
+        <div>
+            <img class="img3" src="../image/Image%20CSS.jpg">
+            <img class="img4" src="../image/Image%20CSS.jpg">
+            <p class="none2">clear: none</p>
+        </div>
+
+        <br>
+
+        <div>
+            <img class="img3" src="../image/Image%20CSS.jpg">
+            <img class="img4" src="../image/Image%20CSS.jpg">
+            <p class="both">clear: both</p>
+        </div>
+    </body>
+</html>
