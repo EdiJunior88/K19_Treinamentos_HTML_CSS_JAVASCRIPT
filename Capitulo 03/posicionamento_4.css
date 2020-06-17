@@ -1,0 +1,26 @@
+/* Podemos fazer o box de um elemento HTML flutuar ao redor dos demais
+   elementos através da propriedade float.
+
+   left - Flutuar à esquerda.
+   right - Flitar à direita.
+   none - Sem flutuação (padrão).
+   inherit - Assume o valor da mesma propriedade no elemento HTML pai. */
+
+p.box{
+    border: 1px solid black;
+    text-align: justify;
+    padding: 20px;
+    width: 300px;
+}
+
+img.left{
+    float: left;
+    max-width: 120px;
+    margin: 0 10px 10px 0;
+}
+
+img.right{
+    float: right;
+    max-width: 120px;
+    margin: 0 0 10px 10px;
+}
