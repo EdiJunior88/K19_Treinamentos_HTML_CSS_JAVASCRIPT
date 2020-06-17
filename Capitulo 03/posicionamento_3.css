@@ -1,0 +1,11 @@
+/* O box de um elemento com position: absolute é colocado em uma
+   posição relativa à posição do box do elemento HTML ancestral mais
+   próximo com position diferente de static. Se não existir um ancestral
+   nessas condições a posição será relativa à página. As propriedades left,
+   top, right e bottom são utilizadas para determinar o deslocamento entre
+   a posição desejada e o ponto de referência. */
+
+img.absolute{
+    position: absolute;
+    top: 550px;
+}

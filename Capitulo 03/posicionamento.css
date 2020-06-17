@@ -1,0 +1,19 @@
+/* O valor static é o valor padrão da propriedade position. O box de
+   um elemento com position: static é colocado na sua posição natural. Não
+   podemos alterar a posição dos boxes dos elementos HTML com position:
+   static */
+
+img.static{
+    position: static;
+}
+
+/* O box de um elemento com position: relative é colocado em uma posição
+   relativa a sua posição natural. As propriedades left, top, right e bottom
+   são utilizadas para determinar o deslocamento entre a posição desejada e a
+   posição natural. O espaço que seria ocupado por esse box se ele estivesse
+   em sua posição natural não é ocupado por nenhum outro elemento. */
+
+img.relative{
+    position: relative;
+    top: 30px;
+}

@@ -1,0 +1,9 @@
+/* O box de um elemento com position: fixed é colocado em uma posição
+   relativa à página e não acompanha a rolagem do conteúdo. As propriedades
+   left, top, right e bottom são utilizadas para determinar o deslocamento
+   entre a posição desejada e à pagina. */
+
+img.fixed{
+    position: fixed;
+    top: 120px;
+}
