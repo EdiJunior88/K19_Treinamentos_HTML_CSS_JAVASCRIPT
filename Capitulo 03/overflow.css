@@ -1,0 +1,39 @@
+/* A propriedade overflow-x determina o que os navegadores devem fazer
+   quando o conteúdo de um elemento HTML extrapola horizontalmente os limites
+   do mesmo.
+
+   visible - O conteúdo excedente na horizontal será exibido (padrão).
+   hidden - O conteúdo excedente na horizontal não será exibido.
+   scroll - O conteúdo excedente na horizontal não será exibido e um mecanismo
+   rolagem horizontal será disponibilizado.
+   auto - O conteúdo excedente na horizontal não será exibido e um mecanismo
+   rolagem horizontal será disponibilizado somente se necessário. */
+
+div{
+    margin: 20px;
+    width: 200px;
+    height: 70px;
+    border: 1px dashed black;
+    background-color: #f3f3f3;
+}
+
+p{
+    width: 2700px;
+}
+
+div.visible{
+    overflow: visible;
+}
+
+div.hidden{
+    overflow: hidden;
+}
+
+div.scroll{
+    overflow: scroll;
+}
+
+div.auto{
+    overflow: auto;
+}
+
