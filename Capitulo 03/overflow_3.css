@@ -1,0 +1,54 @@
+/* A propriedade overflow-y determina o que os navegadores devem fazer
+   quando o conteúdo de um elemento HTML extrapola verticalmente os limites
+   do mesmo.
+
+   visible - O conteúdo excedente na vertical será exibido (padrão).
+   hidden - O conteúdo excedente na vertical não será exibido.
+   scroll - O conteúdo excedente na vertical não será exibido e um mecanismo
+   rolagem vertical será disponibilizado.
+   auto - O conteúdo excedente na vertical não será exibido e um mecanismo
+   rolagem vertical será disponibilizado somente se necessário */
+
+p{
+    width: 250px;
+}
+
+p.visible{
+    border: 1px dashed black;
+    background-color: yellow;
+    overflow: visible;
+    margin: 30px 0px 70px 0px;
+    height: 40px;
+}
+
+p.hidden{
+    border: 1px dashed black;
+    background-color: yellow;
+    margin: 30px 0px 20px 0px;
+    height: 48px;
+    overflow: hidden;
+}
+
+p.scroll{
+    border: 1px dashed black;
+    background-color: yellow;
+    margin: 30px 0px 20px 0px;
+    height: 80px;
+    overflow: scroll;
+}
+
+p.auto{
+    border: 1px dashed black;
+    background-color: yellow;
+    margin: 30px 0px 20px 0px;
+    height: 80px;
+    overflow: auto;
+}
+
+p.auto2{
+    border: 1px dashed black;
+    background-color: yellow;
+    margin: 30px 0px 70px 0px;
+    height: 80px;
+    overflow: auto;
+}
