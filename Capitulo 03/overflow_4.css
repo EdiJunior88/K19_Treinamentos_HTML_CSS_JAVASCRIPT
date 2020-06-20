@@ -1,0 +1,13 @@
+/* Podemos determinar a região do box de um elemento HTML que deve ser
+   exibida com a propriedade clip. Essa propriedade só tem efeito sobre
+   elementos com position: absolute.
+
+   auto - O box inteiro será exibido (padrão).
+   rect(top, right, bottom, left) - Retângulo que define a região que será
+   exibida.
+   inherit - Assume o valor da mesma propriedade no elemento HTML pai. */
+
+img.rect{
+    position: absolute;
+    clip: rect(20px, 95px, 85px, 50px);
+}

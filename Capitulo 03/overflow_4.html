@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Overflow</title>
+        <link rel="stylesheet" type="text/css" href="../Capitulo%2003/overflow_4.css">
+    </head>
+    <body>
+        <h1>Overflow</h1>
+        <h3><i>clip</i></h3>
+
+        <!-- Podemos determinar a região do box de um elemento HTML que deve ser
+        exibida com a propriedade clip. Essa propriedade só tem efeito sobre
+        elementos com position: absolute.
+
+        auto - O box inteiro será exibido (padrão).
+        rect(top, right, bottom, left) - Retângulo que define a região que será
+        exibida.
+        inherit - Assume o valor da mesma propriedade no elemento HTML pai. -->
+
+        <p>Imagem Original</p>
+
+        <img src="../image/Image%20CSS.jpg">
+
+        <p>clip: rect(20px, 95px, 85px, 50px)</p>
+        <img class="rect" src="../image/Image%20CSS.jpg">
+    </body>
+</html>
