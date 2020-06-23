@@ -1,0 +1,25 @@
+#div1{
+    margin: 300px;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    background-color: #064e83;
+    color: white;
+    transition: 1s ease-in-out;
+}
+
+#div1:hover{
+    transform: scale(4, 4) rotate(360deg);
+
+    /* Webkit: Chrome, Safari */
+    -webkit-transform: scale(4, 4) rotate(360deg);
+}
+
+/* Moz: Firefox */
+/* substituir "webkit" por "moz" */
+
+/* O: Opera */
+/* substituir "webkit" por "o" */
+
+/* Ms: Internet Explorer */
+/* substituir "webkit" por "ms" */
