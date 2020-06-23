@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Transições</title>
+        <link rel="stylesheet" type="text/css" href="../Capitulo%2003/transition_2.css">
+    </head>
+    <body>
+        <h1>Transições</h1>
+        <h3><i>transition-duration</i></h3>
+
+        <!-- A duração das transições pode ser controlada com a propriedade
+        transition-duration.
+
+        tempo - A duração em segundos(s) ou milissegundos(ms). Os é o valor
+        padrão.
+
+        Os navegadores devem gerar, automaticamente, frames intermediários
+        entre visual inicial e o final. Esses frames devem ser exibidos
+        sequencialmente durante o tempo determinado com a propriedade
+        transition-duration.-->
+
+        <div class="duration"></div>
+
+        <h3><i>transition-delay</i></h3>
+
+        <!-- Podemos estabelecer um atraso para o início de uma transição com
+         a propriedade transition-delay.
+
+         tempo - A duração em segundos(s) ou milissegundos(ms). Os é o valor
+         padrão. -->
+
+        <div class="delay"></div>
+
+        <h3><i>transition-timing-function</i></h3>
+
+        <!-- Os frames que foram uma transição podem ser exibidos com padrões
+         diferentes. Por exemplo, uma transição pode iniciar devagar, no meio
+         acelerar e terminar devagar. O padrão desejado pode ser determinado
+         através da propriedade transition-timing-function.
+
+         linear - Mesma velocidade do início até o final da transição. Equivale
+         a cubicbezier(0, 0, 1, 1).
+         ease - O início da transição é lento, o meio é rápido e o final volta
+         a ser lento (padrão). Equivale a cubic-bezier(0.25, 0.1, 0.25, 1).
+         ease-in - O início da transição é lento. O meio e o final são rápidos.
+         Equivale a cubicbezier(0.42, 0, 1, 1).
+         ease-out - O início e o meio da transição são rápidos e o final é
+         lento. Equivale a cubicbezier(0, 0, 0.58, 1).
+         ease-in-out - Semelhante ao valor ease com início e final mais longos.
+         Equivale a cubicbezier(0.42, 0, 0.58, 1).
+         cubic-bezier(n,n,n,n) - A transição seguirá o padrão definido pela
+         função cúbica de bezier. -->
+
+        <div class="linear"></div>
+
+        <br>
+
+        <div class="ease"></div>
+
+        <br>
+
+        <div class="ease-in"></div>
+
+        <br>
+
+        <div class="ease-out"></div>
+
+        <br>
+
+        <div class="ease-in-out"></div>
+
+        <h3><i>transition-property</i></h3>
+
+        <!-- Podemos escolher quais propriedades CSS devem ser consideradas
+        nas transições através da propriedade transition-property.
+
+        none - Nenhuma propriedade será considerada na transição.
+        all - Todas as propriedades serão consideradas na transição (padrão).
+        lista-de-propriedades - Lista das propriedades que devem ser
+        consideradas na transição. -->
+
+        <div class="property"></div>
+    </body>
+</html>

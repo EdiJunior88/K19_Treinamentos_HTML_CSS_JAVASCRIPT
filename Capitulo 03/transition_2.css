@@ -1,0 +1,114 @@
+/* A duração das transições pode ser controlada com a propriedade
+   transition-duration.
+
+   tempo - A duração em segundos(s) ou milissegundos(ms). Os é o valor
+   padrão.
+
+   Os navegadores devem gerar, automaticamente, frames intermediários
+   entre visual inicial e o final. Esses frames devem ser exibidos
+   sequencialmente durante o tempo determinado com a propriedade
+   transition-duration. */
+
+div.duration{
+    width: 20px;
+    height: 20px;
+    background-color: #0000FF;
+    transition-duration: 4s;
+}
+
+/* Podemos estabelecer um atraso para o início de uma transição com
+   a propriedade transition-delay.
+
+   tempo - A duração em segundos(s) ou milissegundos(ms). Os é o valor
+   padrão. */
+
+div.delay{
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    transition-duration: 1500ms;
+    transition-delay: 1s;
+}
+
+/* Os frames que foram uma transição podem ser exibidos com padrões
+   diferentes. Por exemplo, uma transição pode iniciar devagar, no meio
+   acelerar e terminar devagar. O padrão desejado pode ser determinado
+   através da propriedade transition-timing-function.
+
+   linear - Mesma velocidade do início até o final da transição. Equivale
+   a cubicbezier(0, 0, 1, 1).
+   ease - O início da transição é lento, o meio é rápido e o final volta
+   a ser lento (padrão). Equivale a cubic-bezier(0.25, 0.1, 0.25, 1).
+   ease-in - O início da transição é lento. O meio e o final são rápidos.
+   Equivale a cubicbezier(0.42, 0, 1, 1).
+   ease-out - O início e o meio da transição são rápidos e o final é
+   lento. Equivale a cubicbezier(0, 0, 0.58, 1).
+   ease-in-out - Semelhante ao valor ease com início e final mais longos.
+   Equivale a cubicbezier(0.42, 0, 0.58, 1).
+   cubic-bezier(n,n,n,n) - A transição seguirá o padrão definido pela
+   função cúbica de bezier. */
+
+div.linear{
+    height: 20px;
+    background-color: #FFFF00;
+    transition-duration: 4s;
+    transition-timing-function: linear;
+}
+
+div.ease{
+    height: 20px;
+    background-color: red;
+    transition-duration: 4s;
+    transition-timing-function: ease;
+}
+
+div.ease-in{
+    height: 20px;
+    background-color: olive;
+    transition-duration: 4s;
+    transition-timing-function: ease-in;
+}
+
+div.ease-out{
+    height: 20px;
+    background-color: #00FF00;
+    transition-duration: 4s;
+    transition-timing-function: ease-out;
+}
+
+div.ease-in-out{
+    height: 20px;
+    background-color: #00FFFF;
+    transition-duration: 4s;
+    transition-timing-function: ease-in-out;
+}
+
+div:hover{
+    height: 80px;
+}
+
+/* Podemos escolher quais propriedades CSS devem ser consideradas
+   nas transições através da propriedade transition-property.
+
+   none - Nenhuma propriedade será considerada na transição.
+   all - Todas as propriedades serão consideradas na transição (padrão).
+   lista-de-propriedades - Lista das propriedades que devem ser
+   consideradas na transição. */
+
+div.property{
+    width: 1px;
+    height: 20px;
+    opacity: 0.3;
+    background-color: blueviolet;
+    transition-duration: 4s;
+    transition-timing-function: linear;
+    transition-property: height, opacity;
+}
+
+div:hover{
+    width: 20px;
+    height: 80px;
+    opacity: 1;
+}
+
+
