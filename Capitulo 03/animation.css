@@ -5,6 +5,10 @@ img{
 }
 
 div{
+    display: inline-flex;
+}
+
+div.animation{
     background: red;
     width: 100px;
     height: 50px;
@@ -22,5 +26,246 @@ div{
     100% {
         width: 100px;
         opacity: 0;
+    }
+}
+
+/* Podemos determinar o padrão de exibição dos quadros de uma
+   animação com a propriedade animation-timing-function.
+
+   linear - Mesma velocidade do início até o final da animação. Equivale
+   a cubicbezier(0, 0, 1, 1).
+   ease - O início da animação é lento, o meio é rápido e o final volta a
+   ser lento (padrão). Equivale a cubic-bezier(0.25, 0.1, 0.25, 1).
+   ease-in - O início da animação é lento. O meio e o final são rápidos.
+   Equivale a cubicbezier(0.42, 0, 1, 1).
+   ease-out - O início e o meio da animação são rápidos e o final é lento.
+   Equivale a cubicbezier(0, 0, 0.58, 1).
+   ease-in-out - Semelhante ao valor ease com início e final mais longos.
+   Equivale a cubicbezier(0.42, 0, 0.58, 1).
+   cubic-bezier(n,n,n,n) - A animação seguirá o padrão definido pela função
+   cúbica de Bézier. */
+
+div.linear{
+    width: 50px;
+    height: 100px;
+    background-color: red;
+    animation: timing-animacao 1s;
+    animation-timing-function: linear;
+}
+
+@keyframes timing-animacao{
+    from {
+        height: 0;
+        opacity: 0;
+    }
+    to{
+        height: 100px;
+        opacity: 1;
+    }
+}
+
+div.ease{
+    width: 50px;
+    height: 100px;
+    background-color: #00FFFF;
+    animation: timing-animacao2 4s;
+    animation-timing-function: ease;
+}
+
+@keyframes timing-animacao2{
+    from {
+        height: 0;
+        opacity: 0;
+    }
+    to{
+        height: 100px;
+        opacity: 1;
+    }
+}
+
+div.ease-in{
+    width: 50px;
+    height: 100px;
+    background-color: #FF00FF;
+    animation: timing-animacao3 4s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes timing-animacao3{
+    from {
+        height: 0;
+        opacity: 0;
+    }
+    to{
+        height: 100px;
+        opacity: 1;
+    }
+}
+
+div.ease-in-out{
+    width: 80px;
+    height: 100px;
+    background-color: gold;
+    animation: timing-animacao4 4s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes timing-animacao4{
+    from {
+        height: 0;
+        opacity: 0;
+    }
+    to{
+        height: 100px;
+        opacity: 1;
+    }
+}
+
+div.cubic-bezier{
+    width: 90px;
+    height: 100px;
+    color: white;
+    background-color: blue;
+    animation: timing-animacao5 4s;
+    animation-timing-function: cubic-bezier(0, 1.08 , 1, -0.6);
+}
+
+@keyframes timing-animacao5{
+    from {
+        height: 0;
+        opacity: 1;
+    }
+    to{
+        height: 100px;
+        opacity: 1;
+    }
+}
+
+/* Podemos adicionar um atraso para o início de uma animação com
+   a propriedade animationdelay.
+
+   tempo - A duração em segundos(s) ou milissegundos(ms). 0s é o valor
+   padrão. */
+
+div.animation-delay{
+    width: 270px;
+    height: 50px;
+    color: white;
+    background-color: black;
+    animation: animation-delay ease 4s;
+    animation-delay: 4s;
+}
+
+@keyframes animation-delay{
+    from {
+        width: 0;
+        opacity: 0;
+    }
+    to{
+        width: 270px;
+        opacity: 1;
+    }
+}
+
+/* A quantidade de repetições de uma animação pode ser determinada
+   com a propriedade animationiteration-count.
+
+   x - O valor x é a quantidade de repetições da animação. 1 é o valor
+   padrão.
+   infinite - A animação se repetirá indefinidamente. */
+
+div.animation-iteration-count{
+    width: 270px;
+    height: 50px;
+    color: white;
+    background-color: maroon;
+    animation: animation-iteration ease 4s;
+    animation-iteration-count: 2;
+}
+
+@keyframes animation-iteration{
+    0%{
+        width: 0;
+        opacity: 0;
+    }
+    50%{
+        width: 270px;
+        opacity: 1;
+    }
+    100%{
+        height: 0;
+        opacity: 0;
+    }
+}
+
+/* A direção adotada na exibição de uma animação pode ser
+   determinada através da propriedade animation-direction.
+
+   normal - A animação será exibida na direção normal (padrão).
+   reverse - A animação será exibida na direção inversa.
+   alternate - A animação será exibida nas direções normal e inversa de
+   forma alternada, iniciando com a direção normal.
+   alternate-reverse - A animação será exibida nas direções normal e
+   inversa de forma alternada, iniciando com a direção inversa */
+
+div.animation-direction{
+    width: 270px;
+    height: 50px;
+    color: white;
+    background-color: dodgerblue;
+    position: relative;
+    animation: animation-direction 4s 2;
+    animation-direction: alternate;
+}
+
+@keyframes animation-direction{
+    0%{
+        left: 0;
+        top: 0;
+    }
+    50%{
+        left: 100px;
+        top: 0;
+        background-color: #00FF00;
+        color: black;
+    }
+    100%{
+        left: 200px;
+        top: 0;
+        color: #FFFF00;
+    }
+}
+
+/* As animações podem ser pausadas ou reiniciadas através da
+   propriedade animation-play-state.
+
+   paused - A animação parada.
+   running - A animação em execução. */
+
+div.animation-play{
+    width: 270px;
+    height: 50px;
+    color: white;
+    background-color: #c1a4cd;
+    position: relative;
+    animation: animation-play 4s 2;
+    animation-play-state: paused
+}
+
+@keyframes animation-play{
+    0%{
+        left: 0;
+        top: 0;
+    }
+    50%{
+        left: 100px;
+        top: 0;
+        background-color: #00FF00;
+        color: black;
+    }
+    100%{
+        left: 200px;
+        top: 0;
+        color: #FFFF00;
     }
 }

@@ -23,7 +23,7 @@
             abaixo, a criação de uma animação chamada k19-animacao.
         </p>
 
-        <div></div>
+        <div class="animation"></div>
 
         <img src="../image/animation.jpg">
 
@@ -31,5 +31,75 @@
 
         <img src="../image/animation2.jpg">
 
+        <h3><i>animation-timing-function</i></h3>
+
+        <!-- Podemos determinar o padrão de exibição dos quadros de uma
+        animação com a propriedade animation-timing-function.
+
+        linear - Mesma velocidade do início até o final da animação. Equivale
+        a cubicbezier(0, 0, 1, 1).
+        ease - O início da animação é lento, o meio é rápido e o final volta a
+        ser lento (padrão). Equivale a cubic-bezier(0.25, 0.1, 0.25, 1).
+        ease-in - O início da animação é lento. O meio e o final são rápidos.
+        Equivale a cubicbezier(0.42, 0, 1, 1).
+        ease-out - O início e o meio da animação são rápidos e o final é lento.
+        Equivale a cubicbezier(0, 0, 0.58, 1).
+        ease-in-out - Semelhante ao valor ease com início e final mais longos.
+        Equivale a cubicbezier(0.42, 0, 0.58, 1).
+        cubic-bezier(n,n,n,n) - A animação seguirá o padrão definido pela função
+        cúbica de Bézier. -->
+
+        <div class="linear">linear</div>
+        <div class="ease">ease</div>
+        <div class="ease-in">ease-in</div>
+        <div class="ease-in-out">ease-in-out</div>
+        <div class="cubic-bezier">cubic-bezier</div>
+
+        <br>
+
+        <h3><i>animation-delay</i></h3>
+
+        <!-- Podemos adicionar um atraso para o início de uma animação com
+        a propriedade animationdelay.
+
+        tempo - A duração em segundos(s) ou milissegundos(ms). 0s é o valor
+        padrão. -->
+
+        <div class="animation-delay">animation-delay</div>
+
+        <h3><i>animation-iteration-count</i></h3>
+
+        <!-- A quantidade de repetições de uma animação pode ser determinada
+        com a propriedade animationiteration-count.
+
+        x - O valor x é a quantidade de repetições da animação. 1 é o valor
+        padrão.
+        infinite - A animação se repetirá indefinidamente. -->
+
+        <div class="animation-iteration-count">animation-iteration-count</div>
+
+        <h3><i>animation-direction</i></h3>
+
+        <!-- A direção adotada na exibição de uma animação pode ser
+        determinada através da propriedade animation-direction.
+
+        normal - A animação será exibida na direção normal (padrão).
+        reverse - A animação será exibida na direção inversa.
+        alternate - A animação será exibida nas direções normal e inversa de
+        forma alternada, iniciando com a direção normal.
+        alternate-reverse - A animação será exibida nas direções normal e
+        inversa de forma alternada, iniciando com a direção inversa-->
+
+        <div class="animation-direction">animation-direction</div>
+
+        <h3><i>animation-play-state</i></h3>
+
+        <!-- As animações podem ser pausadas ou reiniciadas através da
+        propriedade animation-play-state.
+
+        paused - A animação parada.
+        running - A animação em execução. -->
+
+        <div class="animation-play">animation-play-state</div>
     </body>
 </html>
