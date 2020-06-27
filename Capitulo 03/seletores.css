@@ -1,0 +1,29 @@
+table,td{
+    border: 1px black solid;
+    border-collapse: collapse;
+    padding: 8px;
+}
+
+tr.tr1{
+    background-color: #064e83;
+    color: white;
+    font-weight: bold;
+}
+
+tr.tr2{
+    background-color: #008000;
+    color: white;
+    font-weight: bold;
+}
+
+tr.tr3{
+    background-color: #800080;
+    color: white;
+    font-weight: bold;
+}
+
+tr.tr4{
+    background-color: #746909;
+    color: white;
+    font-weight: bold;
+}

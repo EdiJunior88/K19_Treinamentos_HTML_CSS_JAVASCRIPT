@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Seletores</title>
+        <link rel="stylesheet" type="text/css" href="../Capitulo%2003/seletores.css">
+    </head>
+    <body>
+        <h1>Seletores</h1>
+        <h3><i>Seletores Básicos</i></h3>
+
+        <p>
+            Como vimos, os seletores são utilizados para determinar quais
+            elementos HTML devem ser afetados por uma regra CSS. A linguagem
+            CSS oferece uma grande variedade de seletores.
+        </p>
+
+        <table>
+            <tr class="tr1">
+                <td>Seletor</td>
+                <td>Padrão</td>
+                <td>Exemplo</td>
+                <td>Descrição</td>
+            </tr>
+
+            <tr>
+                <td>Universal</td>
+                <td>*</td>
+                <td>*</td>
+                <td>Seleciona todos os elementos</td>
+            </tr>
+
+            <tr>
+                <td>Tipo</td>
+                <td>e</td>
+                <td>p</td>
+                <td>Seleciona todos os elementos <b>p</b></td>
+            </tr>
+
+            <tr>
+                <td>Classe</td>
+                <td>.class</td>
+                <td>.erro</td>
+                <td>Seleciona todos os elementos da classe <b>erro</b></td>
+            </tr>
+
+            <tr>
+                <td>ID</td>
+                <td>#id</td>
+                <td>#conteudo</td>
+                <td>Seleciona o elemento de id <b>conteudo</b></td>
+            </tr>
+
+            <tr>
+                <td>Descendente</td>
+                <td>e1 e2</td>
+                <td>p a</td>
+                <td>Seleciona todo elemento <b>a</b> descendente de um elemento <b>p</b></td>
+            </tr>
+
+            <tr>
+                <td>Filho</td>
+                <td>e1 > e2</td>
+                <td>p > a</td>
+                <td>Seleciona todo elemento <b>a</b> filho de um elemento <b>p</b></td>
+            </tr>
+
+            <tr>
+                <td>Irmão Adjacente</td>
+                <td>e1 + e2</td>
+                <td>h1 + p</td>
+                <td>Seleciona todo elemento <b>p</b> filho de um elemento <b>h1</b></td>
+            </tr>
+
+            <tr>
+                <td>Irmão</td>
+                <td>e1 ~ e2</td>
+                <td>h1 ~ p</td>
+                <td>Seleciona todo elemento <b>p</b> filho de um elemento <b>h1</b></td>
+            </tr>
+        </table>
+
+        <h3><i>Seletores de Atributo</i></h3>
+
+        <table>
+            <tr class="tr2">
+                <td>Padrão</td>
+                <td>Exemplo</td>
+                <td>Descrição</td>
+            </tr>
+
+            <tr>
+                <td>[a]</td>
+                <td>[min]</td>
+                <td>Seleciona todos os elementos que tenham o atributo <b>min</b> definido</td>
+            </tr>
+
+            <tr>
+                <td>[a="v"]</td>
+                <td>[min="10"]</td>
+                <td>Seleciona todos os elementos que tenham o atributo <b>min</b> igual a 10</td>
+            </tr>
+
+            <tr>
+                <td>[a="v"]</td>
+                <td>[min="10"]</td>
+                <td>Seleciona todos os elementos que tenham o atributo <b>min</b> igual a 10</td>
+            </tr>
+
+            <tr>
+                <td>[a~="v"]</td>
+                <td>[title="k19"]</td>
+                <td>Seleciona todos os elementos que possuam a palavra <b>k19</b> no valor do atributo <b>title</b></td>
+            </tr>
+
+            <tr>
+                <td>[a^="v"]</td>
+                <td>[href="https"]</td>
+                <td>Seleciona todos os elementos que possuam a palavra <b>href</b> no valor do atributo <b>https</b></td>
+            </tr>
+
+            <tr>
+                <td>[a$="v"]</td>
+                <td>[href$=".css"]</td>
+                <td>Seleciona todos os elementos que possuam a palavra <b>href</b> no valor do atributo <b>.css</b></td>
+            </tr>
+
+            <tr>
+                <td>[a*="v"]</td>
+                <td>[title*="k19"]</td>
+                <td>Seleciona todos os elementos que possuam a palavra <b>k19</b> no valor do atributo <b>title</b></td>
+            </tr>
+
+            <tr>
+                <td>[a|="v"]</td>
+                <td>[href|="https"]</td>
+                <td>Seleciona todos os elementos que possuam a palavra <b>href</b> no valor do atributo <b>https</b></td>
+            </tr>
+        </table>
+
+        <h3><i>Pseudo-classes</i></h3>
+
+        <table>
+            <tr class="tr3">
+                <td>Padrão</td>
+                <td>Exemplo</td>
+                <td>Descrição</td>
+            </tr>
+
+            <tr>
+                <td>:root</td>
+                <td>:root</td>
+                <td>Seleciona o elemento raiz do documento</td>
+            </tr>
+
+            <tr>
+                <td>:nth-child(n)</td>
+                <td>:nth-child(3)</td>
+                <td>Seleciona todo terceiro elemento contido em algum outro elemento</td>
+            </tr>
+
+            <tr>
+                <td>:nth-last-child(n)</td>
+                <td>:nth-last-child(3)</td>
+                <td>Seleciona todo terceiro elemento de trás para frente contido em algum outro elemento</td>
+            </tr>
+
+            <tr>
+                <td>:nth-of-type(n)</td>
+                <td>a:nth-of-type(3)</td>
+                <td>Seleciona todo terceiro elemento <b>a</b> que é o terceiro elemento contido em algum outro elemento</td>
+            </tr>
+
+            <tr>
+                <td>:nth-last-of-type(n)</td>
+                <td>a:nth-last-of-type(3)</td>
+                <td>Seleciona todo elemento <b>a</b> que é o terceiro elemento de trás para frente contido em algum outro elemento</td>
+            </tr>
+
+            <tr>
+                <td>:first-child</td>
+                <td>:first-child</td>
+                <td>Seleciona todo primeiro elemento contido em algum outro elemento</td>
+            </tr>
+
+            <tr>
+                <td>:last-child</td>
+                <td>:last-child</td>
+                <td>Seleciona todo último elemento contido em algum outro elemento</td>
+            </tr>
+
+            <tr>
+                <td>:first-of-type</td>
+                <td>a:first-of-type</td>
+                <td>Seleciona todo elemento <b>a</b> que é o primeiro elemento contido em algum outro elemento</td>
+            </tr>
+
+            <tr>
+                <td>:last-of-type</td>
+                <td>a:last-of-type</td>
+                <td>Seleciona todo elemento <b>a</b> que é o último elemento contido em algum outro elemento</td>
+            </tr>
+
+            <tr>
+                <td>:only-child</td>
+                <td>:only-child</td>
+                <td>Seleciona todo elemento que é filho único</td>
+            </tr>
+
+            <tr>
+                <td>:only-of-type</td>
+                <td>a:only-of-type</td>
+                <td>Seleciona todo elemento que é o único filho do tipo <b>a</b> de algum outro elemento</td>
+            </tr>
+
+            <tr>
+                <td>:empty</td>
+                <td>:empty</td>
+                <td>Seleciona todo elemento que não tem conteúdo</td>
+            </tr>
+
+            <tr>
+                <td>:link</td>
+                <td>a:link</td>
+                <td>Seleciona todo link não visitado</td>
+            </tr>
+
+            <tr>
+                <td>:visited</td>
+                <td>a:visited</td>
+                <td>Seleciona todo link visitado</td>
+            </tr>
+
+            <tr>
+                <td>:active</td>
+                <td>:active</td>
+                <td>Seleciona todo link ativo</td>
+            </tr>
+
+            <tr>
+                <td>:hover</td>
+                <td>a:hover</td>
+                <td>Seleciona todo link sob o ponteiro do mouse</td>
+            </tr>
+
+            <tr>
+                <td>:focus</td>
+                <td>input:focus</td>
+                <td>SSeleciona o <b>input</b> que está no foco</td>
+            </tr>
+
+            <tr>
+                <td>:target</td>
+                <td>:target</td>
+                <td>Seleciona a âncora atual</td>
+            </tr>
+
+            <tr>
+                <td>:lang(lang)</td>
+                <td>:lang(pt)</td>
+                <td>Seleciona todos os elementos com a linguagem <b>pt</b></td>
+            </tr>
+
+            <tr>
+                <td>:enabled</td>
+                <td>input:enabled</td>
+                <td>Seleciona todos os <b>inputs</b> habilitados</td>
+            </tr>
+
+            <tr>
+                <td>:disabled</td>
+                <td>input:disabled</td>
+                <td>Seleciona todos os <b>inputs</b> desabilitados</td>
+            </tr>
+
+            <tr>
+                <td>:checked</td>
+                <td>input:checked</td>
+                <td>Seleciona todos os <b>inputs</b> marcados</td>
+            </tr>
+
+            <tr>
+                <td>:not(s)</td>
+                <td>:not(.erro)</td>
+                <td>Seleciona todo elemento que não é da classe <b>erro</b></td>
+            </tr>
+        </table>
+
+        <h3><i>Pseudo-elementos</i></h3>
+
+        <table>
+            <tr class="tr4">
+                <td>Padrão</td>
+                <td>Exemplo</td>
+                <td>Descrição</td>
+            </tr>
+
+            <tr>
+                <td>:first-line</td>
+                <td>p:first-line</td>
+                <td>Seleciona a primeira linha de todo parágrafo</td>
+            </tr>
+
+            <tr>
+                <td>:first-letter</td>
+                <td>p:first-letter</td>
+                <td>Seleciona a primeira letra de todo parágrafo</td>
+            </tr>
+
+            <tr>
+                <td>:before</td>
+                <td>p:before</td>
+                <td>Utilizado para adicionar conteúdo antes dos parágrafos</td>
+            </tr>
+
+            <tr>
+                <td>:after</td>
+                <td>p:after</td>
+                <td>Utilizado para adicionar conteúdo depois dos parágrafos</td>
+            </tr>
+        </table>
+    </body>
+</html>
