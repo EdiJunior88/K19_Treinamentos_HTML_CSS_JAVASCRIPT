@@ -1,3 +1,20 @@
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+ul{
+    counter-reset: my-badass-counter;
+}
+
+ul li:before {
+    content: counter(my-badass-counter, upper-alpha);
+    counter-increment: my-badass-counter;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
 table,td{
     border: 1px black solid;
     border-collapse: collapse;

@@ -319,5 +319,111 @@
                 <td>Utilizado para adicionar conteúdo depois dos parágrafos</td>
             </tr>
         </table>
+
+        <h3><i>Prioridade dos Seletores</i></h3>
+
+        <p>
+            Eventualmente, um elemento HTML é afetado por duas ou mais regras
+            CSS. Além disso, uma determinada propriedade CSS pode ser definida
+            com valores diferentes em duas ou mais dessas regras.
+
+            <br>
+
+            Nesse caso, essa propriedade terá o valor definido na regra CSS de
+            maior prioridade. Essas prioridades são calculadas de acordo com
+            os seletores utilizados nas regras CSS e na ordem em que elas
+            foram definidas.
+
+            <br>
+            <br>
+
+            Considere o código HTML e o código CSS a seguir.
+
+            <br>
+
+            <img src="../image/codigo.jpg">
+
+            Perceba que todo elemento p é afetado pelas duas regras CSS acima.
+            Nessas duas regras, a propriedade color foi definida com valores
+            diferentes. Os seletores dessas duas regras possuem a mesma
+            importância. Nesse caso, a última regra tem maior prioridade.
+            Portanto, o texto do parágrafo será exibido em azul.
+
+            <br>
+
+            A propriedade font-size não entrou em conflito, pois foi definida
+            em apenas uma das regras CSS. Portanto, o tamanho da fonte do
+            texto do parágrafo será 14px.
+
+            <br>
+            <br>
+
+            Agora, suponha que o código CSS seja o seguinte:
+            
+            <br>
+            
+            <img src="../image/codigo2.jpg">
+
+            Observe que o parágrafo do exemplo é afetado pelas duas regras CSS acima. Nesse caso, qual será
+            a cor do texto do parágrafo? A resposta correta é vermelho. Isso
+            ocorre, pois os seletores de classe possuem importância maior que
+            os seletores de tipo.
+
+            <br>
+            <br>
+
+            Conforme a complexidade dos seletores utilizados em nossas regras
+            CSS aumenta, a dificuldade em determinar qual deles possui maior
+            importância também aumenta. Por isso, devemos seguir o algoritmo
+            definido na especificação da linguagem CSS para determinar a
+            importância dos seletores. Nesse algoritmo, os seletores obterão
+            uma pontuação em quatro critérios diferentes.
+        </p>
+
+        <ul>
+            <li>Caso as propriedades sejam definidas através do atributo style,
+                a pontuação nesse critério será 1. Caso contrário será 0.
+            </li>
+
+            <li>
+                A pontuação nesse critério será a quantidade de seletores de
+                ID que formam o seletor da regra CSS.
+            </li>
+
+            <li>
+                A pontuação nesse critério será a soma das quantidades de
+                seletores de classe, de atributos e de pseudo-classes que
+                formam o seletor da regra CSS.
+            </li>
+
+            <li>
+                A pontuação nesse critério será a soma das quantidades de
+                seletores de tipo e de pseudo-elementos que formam o seletor
+                da regra CSS.
+            </li>
+        </ul>
+
+        <p>
+            O critério A possui prioridade sobre o critério B, que por sua vez
+            possui prioridade sobre o critério C, que por sua vez possui
+            prioridade sobre o critério D. Veja nas imagens abaixo, um exemplo
+            de como calcular a pontuação dos seletores.
+
+            <br>
+            <br>
+
+            <img src="../image/codigo3.jpg">
+            <img src="../image/codigo4.jpg">
+
+            <br>
+
+            No critério A, as duas regras obtiveram a mesma pontuação. Como
+            ocorreu um empate, devemos analisar o critério seguinte. No
+            critério B, houve outro empate. Portanto, devemos analisar o
+            próximo critério. No critério C, a primeira regra possui uma
+            pontuação maior. Dessa forma, o seletor da primeira regra possui
+            maior importância fazendo com que essa regra tenha maior
+            prioridade.
+        </p>
     </body>
 </html>
