@@ -67,3 +67,14 @@ th.negrito3{
 td.negrito4{
     font-weight: bold;
 }
+
+tr.propriedades{
+    font-family: Arial;
+    font-weight: bold;
+    color: white;
+    background-color: #4c4ca1;
+}
+
+td.primeira_coluna{
+    font-weight: bold;
+}

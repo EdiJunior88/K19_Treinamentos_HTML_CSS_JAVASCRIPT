@@ -196,5 +196,129 @@
                 <td>ambos</td>
             </tr>
         </table>
+
+        <h3><i>Propriedades específicas</i></h3>
+
+        <p>
+            Os tipos de mídia do CSS permitem definir diferentes regras para
+            cada tipo de mídia. Entretanto, eventualmente é necessário
+            definir regras CSS de acordo com características mais específicas
+            dos dispositivo de saída. Para isso, devemos utilizar as chamadas
+            <b>media queries</b>. Veja o seguinte exemplo.
+        </p>
+
+        <img src="../image/media_types3.jpg">
+
+        <p>
+            No exemplo acima, as regras CSS serão aplicadas caso o tipo de
+            mídia utilizado seja <b>screen</b> e a área de renderização do
+            documento (viewport) tenha, no mínimo, 500 pixels de largura.
+            Como vimos as <b>media queries</b> também podem ser definidas
+            através do atributo <b>media</b> do elemento <b>link</b>.
+        </p>
+        
+        <img src="../image/media_types4.jpg">
+
+        <p>
+            No exemplo abaixo, o código dentro da regra <b>media</b> será
+            aplicado quando a largura do viewport for pelo menos 500 pixels
+            ou quando a orientação for <b>portrait</b>.
+        </p>
+
+        <img src="../image/media_types5.jpg">
+
+        <p>
+            Eventualmente, uma media query pode não fazer sentido. Considere
+            o seguinte exemplo:
+        </p>
+
+        <img src="../image/media_types6.jpg">
+
+        <p>
+            No exemplo acima, a media query é contraditória, pois o tipo de
+            mídia <b>speech</b> não é compatível com a propriedade
+            <b>min-width</b>. Dessa forma, o código CSS definido dentro da
+            regra <b>media</b> nunca será processado.
+
+            <br>
+            <br>
+
+            Veja a seguir algumas propriedades que podemos utilizar nas media
+            queries
+        </p>
+
+        <table>
+            <tr class="propriedades">
+                <td>Propriedade</td>
+                <td>Descrição</td>
+                <td>Valor</td>
+                <td>Media Type</td>
+                <td>min e max?</td>
+            </tr>
+
+            <tr>
+                <td class="primeira_coluna">width</td>
+                <td>Determina qual deve ser a largura do viewport no dispositivo de saída</td>
+                <td>Medidas</td>
+                <td>visual e tactile</td>
+                <td>sim</td>
+            </tr>
+
+            <tr>
+                <td class="primeira_coluna">height</td>
+                <td>Determina qual deve ser a altura do viewport no dispositivo de saída.</td>
+                <td>Medidas</td>
+                <td>visual e tactile</td>
+                <td>sim</td>
+            </tr>
+
+            <tr>
+                <td class="primeira_coluna">device-width</td>
+                <td>Determina qual deve ser a largura da tela do dispositivo de saída.</td>
+                <td>Medidas</td>
+                <td>visual e tactile</td>
+                <td>sim</td>
+            </tr>
+
+            <tr>
+                <td class="primeira_coluna">device-height</td>
+                <td>Determina qual deve ser a altura da tela do dispositivo de saída.</td>
+                <td>Medidas</td>
+                <td>visual e tactile</td>
+                <td>sim</td>
+            </tr>
+
+            <tr>
+                <td class="primeira_coluna">orientation</td>
+                <td>Verifica se o viewport está na orientação portrait (retrato) ou landscape (paisagem).</td>
+                <td>portrait ou landscape</td>
+                <td>bitmap</td>
+                <td>não</td>
+            </tr>
+
+            <tr>
+                <td class="primeira_coluna">aspect-radio</td>
+                <td>Determina a razão entre as propriedades width e height.</td>
+                <td>inteiro/inteiro</td>
+                <td>bitmap</td>
+                <td>sim</td>
+            </tr>
+
+            <tr>
+                <td class="primeira_coluna">color-index</td>
+                <td> Determina o número de cores do dispositivo de saída.</td>
+                <td>inteiro</td>
+                <td>visual</td>
+                <td>sim</td>
+            </tr>
+
+            <tr>
+                <td class="primeira_coluna">resolution</td>
+                <td>Determina a resolução do dispositivo de saída.</td>
+                <td>dpi</td>
+                <td>bitmap</td>
+                <td>sim</td>
+            </tr>
+        </table>
     </body>
 </html>
