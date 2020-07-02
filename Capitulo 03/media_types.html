@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Media Types</title>
+        <link rel="stylesheet" type="text/css" href="../Capitulo%2003/media_types.css">
+    </head>
+    <body>
+        <h1>Media Types</h1>
+
+        <p>
+            No momento em que definimos as regras CSS dos nossos documentos, 
+            também podemos determinar para quais tipos de mídia essas regras 
+            serão válidas, ou seja, podemos decidir quais regras serão 
+            aplicadas quando o documento for apresentado em uma tela, no papel
+            ou narrado por um sintetizador de voz, por exemplo. Podemos 
+            informar o tipo de mídia de duas formas: com o atributo
+            media do elemento link ou com a regra media do CSS.
+        </p>
+        
+        <img src="../image/media_types.jpg">
+
+        <p>
+            A linguagem CSS define os seguintes tipos de mídia:
+        </p>
+
+        <table>
+            <tr class="media_type">
+                <td>Media Type</td>
+                <td>Descrição</td>
+            </tr>
+
+            <tr>
+                <td>all</td>
+                <td>Todos os tipos de mídia.</td>
+            </tr>
+
+            <tr>
+                <td>braille</td>
+                <td>Dispositivos em braille com respostas a toques</td>
+            </tr>
+
+            <tr>
+                <td>embossed</td>
+                <td>Impressoras em braille.</td>
+            </tr>
+
+            <tr>
+                <td>handheld</td>
+                <td>Dispositivos portáetis (exceto smartphones mais modernos).</td>
+            </tr>
+
+            <tr>
+                <td>print</td>
+                <td>Impressoras convencionais.</td>
+            </tr>
+
+            <tr>
+                <td>projection</td>
+                <td>Projetores.</td>
+            </tr>
+
+            <tr>
+                <td>screen</td>
+                <td>Tela de computadores, smartphones ou algum dispositivo
+                    do gênero.</td>
+            </tr>
+
+            <tr>
+                <td>speech</td>
+                <td>Sintetizadores de voz.</td>
+            </tr>
+
+            <tr>
+                <td>tty</td>
+                <td>Dispositivos de grades com caracteres de tamanho fixo
+                    (teletypes, terminal ou dispositivos com limitações de
+                    exibição).</td>
+            </tr>
+
+            <tr>
+                <td>tv</td>
+                <td>Televisores.</td>
+            </tr>
+        </table>
+
+        <p>
+            Podemos definir as mesmas regras CSS para diversos tipos de mídia.
+            Para isso devemos separar esses tipos por vírgula.
+        </p>
+
+        <img src="../image/media_types2.jpg">
+
+        <h3><i>Media Groups</i></h3>
+
+        <p>
+            Algumas propriedades não são aplicáveis a determinados tipos de
+            mídia. Por exemplo, a propriedade <b>width</b> não pode ser aplicada à
+            mídia <b>speech</b>. Por outro lado, algumas propriedades podem
+            ser aplicadas à diversas mídias. Por exemplo, a propriedade
+            position pode ser aplicada às mídias <b>screen, projection,
+            handheld, print, tty e tv</b>.
+
+            <br>
+            <br>
+
+            Para identificar, mais facilmente, quais propriedades podem ser
+            aplicadas a um determinado tipo de mídia, a especificação da
+            linguagem CSS divide em grupos os diversos tipos de mídia.
+
+            <br>
+            <br>
+
+            Confira na tabela a seguir a relação entre os tipos de mídia e os
+            grupos de mídia:
+        </p>
+
+        <table>
+            <tr class="media_groups">
+                <td>Media Type</td>
+                <th></th>
+                <th class="titulo_coluna">Media Groups</th>
+                <th></th>
+                <th class="ultimo_celula"></th>
+            </tr>
+
+            <tr>
+                <td class="primeira_celula"></td>
+                <td class="negrito">continuous e paged</td>
+                <th class="negrito2">visual, audio, speech e tactile</th>
+                <th class="negrito3">grid e bitmap</th>
+                <td class="negrito4">interactive e static</td>
+            </tr>
+
+            <tr>
+                <td class="coluna_media_type">braile</td>
+                <td>continuous</td>
+                <th>tactile</th>
+                <th>grid</th>
+                <td>ambos</td>
+            </tr>
+
+            <tr>
+                <td class="coluna_media_type">embossed</td>
+                <td>paged</td>
+                <th>tactile</th>
+                <th>grid</th>
+                <td>static</td>
+            </tr>
+
+            <tr>
+                <td class="coluna_media_type">handheld</td>
+                <td>ambos</td>
+                <th>visual, audio, speech</th>
+                <th>ambos</th>
+                <td>ambos</td>
+            </tr>
+
+            <tr>
+                <td class="coluna_media_type">projection</td>
+                <td>paged</td>
+                <th>visual</th>
+                <th>bitmap</th>
+                <td>interactive</td>
+            </tr>
+
+            <tr>
+                <td class="coluna_media_type">screen</td>
+                <td>continuous</td>
+                <th>visual, audio</th>
+                <th>bitmap</th>
+                <td>ambos</td>
+            </tr>
+
+            <tr>
+                <td class="coluna_media_type">speech</td>
+                <td>continuous</td>
+                <th>speech</th>
+                <th>nenhum</th>
+                <td>ambos</td>
+            </tr>
+
+            <tr>
+                <td class="coluna_media_type">tty</td>
+                <td>continuous</td>
+                <th>visual</th>
+                <th>grid</th>
+                <td>ambos</td>
+            </tr>
+
+            <tr>
+                <td class="coluna_media_type">tv</td>
+                <td>ambos</td>
+                <th>visual, audio</th>
+                <th>bitmap</th>
+                <td>ambos</td>
+            </tr>
+        </table>
+    </body>
+</html>
