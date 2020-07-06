@@ -1,0 +1,31 @@
+img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.quadrado{
+    height: 80px;
+    width: 80px;
+    border: 1px solid black;
+    margin-left: 20px;
+    background-image: linear-gradient(to top right, green 50%, yellow);
+}
+
+td.texto{
+    padding-top: 25px;
+}
+
+div.quadrado2{
+    height: 80px;
+    width: 80px;
+    border: 1px solid black;
+    margin-top: 25px;
+    margin-left: 20px;
+    background-image: linear-gradient(135deg, green, white, blue);
+}

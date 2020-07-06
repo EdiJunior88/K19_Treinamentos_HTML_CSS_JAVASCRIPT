@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Gradientes</title>
+        <link rel="stylesheet" type="text/css" href="../Capitulo%2003/gradientes.css">
+    </head>
+    <body>
+        <h1>Gradientes (Conteúdo Extra)</h1>
+
+        <p>
+            Até a versão 2 do CSS, não era possível definir um gradiente de
+            cores como background de um elemento a não ser através de imagens
+            estáticas (jpg, gif ou png). A partir da versão 3, podemos definir
+            um gradiente diretamente no código CSS através das funções
+            <b>linear-gradient, repeating-lineargradient, radial-gradient e
+            repeating-radial-gradient</b>.
+
+            <br>
+            <br>
+
+            De acordo com a especificação CSS, os gradientes são semelhantes às imagens. Eles podem ser
+            definidos em qualquer propriedade que aceite uma imagem como valor
+        </p>
+
+        <h3><i>Gradiente Linear</i></h3>
+
+        <p>
+            Para definir um gradiente linear, é necessário utilizar a função
+            <b>linear-gradient</b>.
+
+            <img src="../image/gradientes2.jpg">
+
+            <br>
+
+            No exemplo abaixo, podemos entender melhor cada um dos parâmetros:
+
+            <img src="../image/gradientes3.jpg">
+
+            Veja mais alguns exemplos:
+        </p>
+
+        <table>
+            <tr>
+                <td>linear-gradient(to top right, green 50%, yellow)</td>
+                <td>
+                    <div class="quadrado"></div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="texto">linear-gradient(135deg, green, white, blue)</td>
+                <td>
+                    <div class="quadrado2"></div>
+                </td>
+            </tr>
+        </table>
+
+        <p>
+            Repare que quando a primeira parada de cor começa em uma posição
+            diferente de 0%, o gradiente é preenchido com a cor da primeira
+            parada de cor do 0% até essa posição.
+        </p>
+    </body>
+</html>
