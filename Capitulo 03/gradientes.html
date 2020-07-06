@@ -49,7 +49,7 @@
             </tr>
 
             <tr>
-                <td class="texto">linear-gradient(135deg, green, white, blue)</td>
+                <td class="texto2">linear-gradient(135deg, green, white, blue)</td>
                 <td>
                     <div class="quadrado2"></div>
                 </td>
@@ -61,5 +61,144 @@
             diferente de 0%, o gradiente é preenchido com a cor da primeira
             parada de cor do 0% até essa posição.
         </p>
+
+        <h3><i>Gradiente linear com repetição</i></h3>
+
+        <p>
+            Para definir um gradiente linear com repetição, devemos utilizar a
+            função <b>repeating-linear-gradient</b> que recebe exatamente os
+            mesmos parâmetros da função <b>linear-gradient</b>.
+
+            <br>
+            <br>
+
+            A princípio o gradiente linear com repetição funcionará da mesma
+            forma que o gradiente linear.
+            Seu comportamento só será alterado nas seguintes situações:
+
+            <ul>
+                <li>Se a primeira parada de cor não começar em 0%</li>
+                <li>Se a última parada de cor não terminar em 100%</li>
+            </ul>
+
+            Se uma ou as duas situações ocorrerem, o gradiente se repetirá
+            para completar as regiões da linha do gradiente sem cores
+            definidas.
+
+            <br>
+            <br>
+
+            Veja alguns exemplos:
+        </p>
+
+        <table>
+            <tr>
+                <td>linear-gradient(to top left, green, yellow)</td>
+                <td>
+                    <div class="quadrado3"></div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>repeating-linear-gradient(to top left, green, yellow)</td>
+                <td>
+                    <div class="quadrado4"></div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>linear-gradient(to top left, green 50%, yellow)</td>
+                <td>
+                    <div class="quadrado5"></div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>repeating-linear-gradient(to top left, green 50%, yellow)</td>
+                <td>
+                    <div class="quadrado6"></div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>linear-gradient(to top left, green, yellow 50%)</td>
+                <td>
+                    <div class="quadrado7"></div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>repeating-linear-gradient(to top left, green, yellow 50%)</td>
+                <td>
+                    <div class="quadrado8"></div>
+                </td>
+            </tr>
+        </table>
+
+        <h3><i>Gradiente radial</i></h3>
+
+        <p>
+            Para definir um gradiente radial, devemos utilizar a função
+            <b>radial-gradient</b>.
+
+            <br>
+            <br>
+
+            <img src="../image/gradientes4.jpg">
+            <img src="../image/gradientes5.jpg">
+
+            No exemplo abaixo, podemos entender melhor cada um dos
+            parâmetros:
+
+            <img src="../image/gradientes6.jpg">
+        </p>
+
+        <h3><i>Gradiente radial com repetição</i></h3>
+
+        <p>
+            Para definir um gradiente radial com repetição, devemos utilizar
+            a função <b>repeating-radial-gradient</b> que recebe exatamente
+            os mesmos parâmetros da função <b>radial-gradient</b>.
+
+            <br>
+            <br>
+
+            A princípio o gradiente radial com repetição funcionará da mesma
+            forma que o gradiente radial.
+            Seu comportamento só será alterado nas seguintes situações:
+
+            <br>
+
+            <ul>
+                <li>Se a primeira parada de cor não começar em 0%</li>
+                <li>Se a última parada de cor não terminar em 100%</li>
+            </ul>
+
+            <br>
+
+            Se uma ou as duas situações ocorrerem, o gradiente se repetirá
+            para completar as regiões da linha do gradiente sem cores
+            definidas.
+
+            <br>
+
+            Confira o exemplo:
+        </p>
+
+        <table>
+            <tr>
+                <td>radial-gradient(black 0%, white 25%)</td>
+                <td>
+                    <div class="quadrado9"></div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>repeating-radial-gradient(black 0%, white 25%)</td>
+                <td>
+                    <div class="quadrado10"></div>
+                </td>
+            </tr>
+        </table>
     </body>
 </html>
