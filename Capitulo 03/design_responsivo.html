@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Design Responsivo</title>
+        <link rel="stylesheet" type="text/css" href="design_responsivo.css">
+    </head>
+    <body>
+        <h1>Design Responsivo (Conteúdo Extra)</h1>
+
+        <p>
+            Durante muito tempo, os computadores tradicionais (desktops e
+            laptops) foram os principais dispositivos de acesso à Internet.
+            Nos últimos anos, uma grande variedade de novos equipamentos
+            capazes de acessar a Internet foram introduzidos no mercado.
+            Desses dispositivos podemos destacar os smartphones e tablets
+            (dispositivos móveis).
+
+            <br>
+            <br>
+
+            O número de usuários que acessam a Internet através de dispositivos
+            móveis está cada vez maior e só tende a crescer. Portanto, os
+            desenvolvedores web devem ficar cada vez mais preocupados em atender
+            de maneira satisfatória o público mobile.
+
+            <br>
+            <br>
+
+            Atender o público mobile de maneira satisfatória significa
+            apresentar o conteúdo de uma página utilizando da melhor forma
+            possível os recursos do dispositivo.
+
+            <br>
+            <br>
+
+            Por exemplo, uma página pode ter uma usabilidade muito boa quando
+            acessada através de um desktop. Porém, ao acessá-la através de um
+            smartphone, as letras podem ficar muito pequenas, o conteúdo pode
+            não se encaixar no tamanho da tela ou as interações através do
+            toque podem não funcionar tão bem se comparadas às interações
+            realizadas com o mouse.
+
+            <br>
+            <br>
+
+            Uma solução para esse problema seria a criação de uma versão do
+            site para cada tipo de dispositivo. Geralmente, a versão para
+            desktop é a mais completa e as demais possuem recursos reduzidos.
+            Essa é uma solução adotada por diversos sites. Normalmente, as
+            versões mobile são acessadas através de URLs específicas. Em geral,
+            essas URLs começam com mobile, mob ou até mesmo m
+            (ex: http://m.kekanto.com). Entretanto, antes de adotar essa
+            solução devemos levantar algumas questões
+        </p>
+
+        <h3>Como fica a manutenção do site?</h3>
+
+        <p>
+            Muito mais trabalhosa. Basicamente, para cada tipo de dispositivo ,
+            teríamos um site diferente, ou seja, teríamos que gerenciar dois
+            ou mais sites ao invés de apenas um.
+        </p>
+
+        <h3>O que fazer com as URLs do site?</h3>
+
+        <p>
+            Para cada tipo de dispositivo uma URL diferente. Por exemplo, uma
+            para mobile (http://mob.dominio.com), outra para televisores
+            (http://tv.dominio.com) e outra para desktops
+            (http://www.dominio.com). Além disso, deveríamos nos preocupar com
+            o redirecionamento das URLs, pois seria mais apropriado que um
+            usuário acessando o endereço www.dominio.com através de sua
+            televisão fosse redirecionado para tv.dominio.com.
+        </p>
+
+        <h3>
+            O usuário vai ficar insatisfeito se ele não puder fazer tudo o que
+            fazia no desktop?
+        </h3>
+
+        <p>
+            Sim! Se a versão diferenciada for uma versão reduzida da versão
+            desktop, ele ficará extremamente decepcionado. Os usuários tendem
+            a querer ter todo o poder do desktop nos smartphones e afins.
+
+            <br>
+            <br>
+
+            Para evitar esses e outros problemas, uma outra solução que está
+            ganhando cada vez mais força parte do princípio de que a página
+            deve ser a mesma. O que deve mudar é a forma de apresentá-la ao
+            usuário. Essa é a ideia do Design Responsivo.
+
+            <br>
+            <br>
+
+            O design responsivo pode ser dividido em três partes principais:
+            layouts flexíveis, media queries e mídias flexíveis. A seguir
+            iremos discutir sobre cada parte.
+        </p>
+
+        <h2>Layouts Flexíveis</h2>
+
+        <p>
+            A ideia por trás dos layouts flexíveis é fazer com que os elementos
+            de uma página sejam capazes de terem as suas dimensões adaptadas
+            dinamicamente. Isso é bem interessante quando queremos que o layout
+            da página se adapte a diferentes tamanhos de tela ou alguns
+            elementos sejam redimensionados após uma interação do usuário, por
+            exemplo.
+
+            <br>
+            <br>
+
+            Quando criamos layouts estáticos, em geral, trabalhamos com
+            unidades de medida estáticas como <span>px, pt, in, cm</span> e
+            etc. Ao criarmos layouts flexíveis passamos a trabalhar muito mais
+            com as unidades relativas como %, <span>em, ex</span> e etc.
+            Fazemos isso para evitar que ocorram deformações ou overflow na
+            apresentação do conteúdo.
+
+            <br>
+            <br>
+
+            Para facilitar o trabalho de quem desenhará o layout de uma página
+            e também de quem produzirá o código HTML e CSS, uma técnica muito
+            comum é a de tentar visualizar a tela como um sistema de grades.
+            Nesse sistema, cada grade deve ter as suas dimensões definidas com
+            unidades de medida relativas. Dessa forma, se a tela do usuário for
+            redimensionada, todo o sistema de grade será reajustado.
+        </p>
+        
+        <img src="../image/design_responsivo.jpg">
+
+        <h2>Media Queries</h2>
+
+        <p>
+            Como o objetivo do design responsivo é apresentar o conteúdo de uma
+            página de maneiras diferentes em dispositivos com tamanhos de telas
+            diferentes, em algum momento sentiremos a necessidade de criar
+            regras CSS para cada tamanho de tela ou para cada conjunto de
+            tamanho de telas. Em uma situação como essa, as media queries se
+            encaixam perfeitamente e devemos utilizá-las.
+        </p>
+
+        <h3>Breakpoints</h3>
+
+        <p>
+            O ponto principal da relação das media queries com o design
+            responsivo é a definição daquilo que chamamos de breakpoints
+            (pontos de quebra). Muitos autores costumam definir esses pontos em
+            torno dos tamanhos dos viewports mais comuns como 320px, 480px, 768px,
+            1024px e assim por diante. Essa é uma estratégia normalmente chamada
+            de <span>device-driven breakpoints, device-based breakpoints</span> ou
+            pontos de quebra orientados à dispositivos. Evite essa técnica, pois,
+            como o próprio nome diz, ela faz com que as regras CSS sejam aplicadas
+            quando uma página for aberta em dispositivos com tamanhos de tela
+            esperados, ou seja, a página poderá estar despreparada quando for
+            aberta por um dispositivo com tela de 400px, por exemplo.
+
+            <br>
+            <br>
+
+            Uma estratégia muito mais interessante é a que chamamos de
+            <span>content-driven breakpoints, contentbased breakpoints</span> ou
+            pontos de quebra orientados ao conteúdo. Nessa estratégia definimos
+            os pontos de quebra observando se o conteúdo da página se acomoda
+            corretamente ao tamanho do viewport. Uma técnica muito eficiente é
+            começar do menor para o maior tamanho de viewport. Em geral, o menor
+            tamanho refere-se aos dispositivos mobile e, por isso, a técnica
+            recebe o nome de <span>mobile first</span>.
+
+            <br>
+            <br>
+
+            Aplicar a estratégia do <span>content-drive breakpoints</span>
+            juntamente com a técnica <span>mobile first</span> é relativamente
+            simples: redimensione a janela do navegador para que o viewport fique
+            com o menor tamanho esperado (mobile). Esse será o primeiro
+            breakpoint. Aplique as regras CSS na página e em seguida redimensione
+            a janela do navegador até que o conteúdo não seja apresentado
+            corretamente ou a página tenha o layout “quebrado”. Quando isso
+            ocorrer significa que encontramos o próximo breakpoint. Nesse
+            breakpoint, aplique as regras CSS para que a página volte a ser
+            apresentada corretamente. Repita esse processo até considerar que
+            tenha definido todos os breakpoints necessários.
+        </p>
+
+        <h2>Mídias Flexíveis</h2>
+
+        <p>
+            Para criarmos uma página que seja confortável para a leitura, devemos
+            ajustar o posicionamento e a dimensão dos elementos conforme vimos
+            anteriormente. As imagens, players de vídeo e áudio não são exceções.
+            Entretanto, quando trabalhamos com certos tipos de mídias devemos ter
+            alguns cuidados especiais.
+
+            <br>
+            <br>
+            
+            Suponha uma imagem de 320px de largura que gostaríamos de exibir em
+            uma página de maneira que ela se adapte à largura da tela.
+            Conseguiríamos fazer isso utilizando a propriedade width: 100%, por
+            exemplo. Veja abaixo como ficaria essa página exibida em um
+            smartphone e em um desktop.
+        </p>
+        
+        <img src="../image/design_responsivo2.jpg">
+
+        <p>
+            Na imagem acima podemos perceber que a qualidade da imagem diminuiu
+            ao esticá-la. Para evitar ou amenizar esse tipo de problema poderíamos
+            criar diversas versões da imagem, uma para cada breakpoint. Poderíamos
+            também obter uma imagem original de tamanho maior, pois, em geral,
+            diminuir uma imagem perde menos qualidade do que esticar. Ou ainda,
+            dependendo da imagem, poderíamos utilizar uma versão vetorial da
+            mesma. Como podemos observar, existem diversas técnicas para resolver
+            esse tipo de problema e, caso tenha interesse, procure por
+            <span>Icon Fonts</span>, formato de imagem <span>SVG e Compressive
+            Images</span>. Esses são termos muito utilizados por técnicas de
+            otimização de imagens na web.
+
+            <br>
+            <br>
+
+            No caso dos players de vídeo e áudio recomendamos a leitura do artigo
+            neste endereço: http://alistapart.com/article/creating-intrinsic-ratios-for-video
+        </p>
+    </body>
+</html>
