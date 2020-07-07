@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Box-Sizing</title>
+        <link rel="stylesheet" type="text/css" href="../Capitulo%2003/box-sizing.css">
+    </head>
+    <body>
+        <h1>Box-Sizing (Conteúdo Extra)</h1>
+
+        <p>
+            De acordo com o box model, devemos levar em consideração as margens
+            internas, bordas e as propriedades width e height de um elemento
+            para determinarmos as suas dimensões. No começo, isso pode não
+            parecer muito natural, pois tendemos a imaginar a largura e altura
+            final do elemento como sendo as medidas atribuídas somente às
+            propriedades width e height, respectivamente. Isso acaba gerando
+            uma grande confusão, principalmente para quem está começando a
+            aprender CSS.
+
+            <br>
+            <br>
+
+            Através da propriedade box-sizing podemos decidir como as
+            propriedades width e height se comportarão. Confira na tabela
+            abaixo os possíveis valores da propriedade:
+
+            <br>
+
+            <h2>content-box</h2>
+
+            Comportamento padrão. As propriedades <span>width e height</span>
+            definem as dimensões da área do conteúdo do elemento.
+
+            <h2>padding-box</h2>
+
+            As propriedades <span>width e height</span> definem as dimensões da
+            área do conteúdo do elemento em conjunto com as margens internas.
+
+            <h2>border-box</h2>
+
+            As propriedades <span>width e height</span> definem as dimensões da
+            área do conteúdo do elemento em conjunto com as margens internas e
+            bordas.
+
+            <h2>inherit</h2>
+
+            Assume o valor da mesma propriedade no elemento HTML pai.
+
+            <br>
+            <br>
+
+            Veja a figura abaixo para compreender melhor cada um dos valores:
+        
+            <br>
+            
+            <img src="../image/box-sizing.jpg">
+        </p>
+    </body>
+</html>
