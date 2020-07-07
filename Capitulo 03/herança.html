@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Heranças</title>
+        <link rel="stylesheet" type="text/css" href="../Capitulo%2003/herança.css">
+    </head>
+    <body>
+        <h1>Heranças (Conteúdo Extra)</h1>
+
+        <p>
+            Herança em CSS é o mecanismo pelo qual os valores de algumas
+            propriedades são passadas de um elemento pai para um elemento
+            filho. Os valores de algumas propriedades são herdados
+            automaticamente enquanto outros não. Além disso, existem
+            propriedades que não podem assumir o valor proveniente da mesma
+            propriedade do elemento pai.
+
+            <br>
+            <br>
+
+            Uma propriedade herda o valor do elemento pai quando atribuímos o
+            valor <span>inherit</span> à ela.
+
+            <br>
+            <br>
+
+            Considere os seguintes códigos:
+
+            <img src="../image/heranças.jpg">
+
+            No exemplo acima, a propriedade color foi definida apenas para o
+            elemento <span>div</span>. No elemento <span>p</span>, essa
+            propriedade assumirá o valor padrão que é <span>inherit</span>,
+            ou seja, será herdado automaticamente do elemento pai. Como
+            consequência a cor do texto do parágrafo será vermelha.
+
+            <br>
+            <br>
+
+            Agora, considere este outro exemplo:
+
+            <br>
+            <br>
+
+            <img src="../image/heranças2.jpg">
+
+            O elemento <span>div</span> terá borda de 1 pixel com cor vermelha.
+            Diferentemente do exemplo anterior, o parágrafo não herdará o valor
+            para a propriedade <span>border</span>, pois ela não possui o valor
+            <span>inherit</span> como padrão. Se quiséssemos que o elemento
+            <span>p</span> herdasse o valor da propriedade border, deveríamos
+            definir as seguintes regras CSS:
+
+            <br>
+            <br>
+
+            <img src="../image/heranças3.jpg">
+        </p>
+    </body>
+</html>
