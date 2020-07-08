@@ -1,0 +1,21 @@
+div{
+    height: 100px;
+    width: 400px;
+    margin: 10px;
+    padding: 25px;
+    border: 10px dotted black;
+    background-repeat: no-repeat;
+    background-image: url("../../../image/planeta_terra.png");
+}
+
+#div1{
+    background-size: 50px auto;
+}
+
+#div2{
+    background-size: cover;
+}
+
+#div3{
+    background-size: contain;
+}
