@@ -1,0 +1,24 @@
+div{
+    height: 300px;
+    width: 400px;
+    border: 1px solid black;
+}
+
+#div1{
+    background-image: url("../../../image/planeta_terra.png");
+}
+
+#div2{
+    background-image: url("../../../image/planeta_terra.png");
+    background-repeat: no-repeat;
+}
+
+#div3{
+    background-image: url("../../../image/planeta_terra.png");
+    background-repeat: repeat-x;
+}
+
+#div4{
+    background-image: url("../../../image/planeta_terra.png");
+    background-repeat: repeat-y;
+}
