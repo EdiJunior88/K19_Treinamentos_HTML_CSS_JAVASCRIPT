@@ -1,0 +1,20 @@
+div{
+    height: 400px;
+    width: 50px;
+    margin: 10px;
+    padding: 50px;
+    border: 10px dotted black;
+    background-color: yellow;
+}
+
+#div1{
+    background-clip: border-box;
+}
+
+#div2{
+    background-clip: padding-box;
+}
+
+#div3{
+    background-clip: content-box;
+}
