@@ -1,0 +1,11 @@
+#ul1{
+    list-style-image: url("../../../image/estrela.png");
+}
+
+#ul2{
+    list-style-image: url("../../../image/attention.png");
+}
+
+#ul3{
+    list-style-image: url("../../../image/globe.png");
+}
