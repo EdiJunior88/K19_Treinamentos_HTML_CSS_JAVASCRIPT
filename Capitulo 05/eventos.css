@@ -1,0 +1,11 @@
+table, td, tr{
+    padding: 6px;
+    border: black 1px solid;
+    border-collapse: collapse;
+}
+
+td.titulo_coluna{
+    color: white;
+    font: bold 20px "Times New Roman";
+    background-color: dimgray;
+}
