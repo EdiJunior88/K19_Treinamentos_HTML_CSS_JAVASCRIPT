@@ -1,0 +1,15 @@
+table, td, tr{
+    border: 1px black solid;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+td.coluna_titulo{
+    font: bold 20px "Times New Roman";
+    color: white;
+    background-color: grey;
+}
+
+p{
+    font: bold 12px "Arial Black";
+}

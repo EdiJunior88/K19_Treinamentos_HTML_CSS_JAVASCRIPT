@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Eventos</title>
+    <link rel="stylesheet" type="text/css" href="../Capitulo%2005/eventos_5.css">
+</head>
+<body>
+    <h1>Propriedades</h1>
+    
+    <!-- Os eventos são associados à informações especificas. Por exemplo, quando o evento click é disparado,
+    ele é associado a uma coordenada horizontal e uma vertical. Essas coordenadas definem a posição do
+    ponteiro do mouse quando o clique ocorreu. Para recuperar essas informações, basta adicionar um parâmetro
+    nas funções de tratamento de eventos.
+    
+    No exemplo abaixo, utilizamos as propriedades pageX e pageY para recuperar as coordenadas correspondentes
+    à posição do ponteiro do mouse quando um clique ocorrer no body -->
+    
+    $("body").click(function(event){
+        <br>
+        &nbsp &nbsp &nbsp console.log("click: (" + event.pageX + ", " + event.pageY + ")");
+        <br>
+    });
+    
+    <br>
+    <br>
+    
+    <table>
+        <tr>
+            <td class="coluna_titulo">Propriedade</td>
+            <td class="coluna_titulo">Descrição</td>
+        </tr>
+        
+        <tr>
+            <td>pageX</td>
+            <td>
+                Coordenada horizontal da posição do ponteiro do mouse.
+                <br>
+                <br>
+                http://api.jquery.com/event.pageX
+            </td>
+        </tr>
+    
+        <tr>
+            <td>pageY</td>
+            <td>
+                Coordenada vertical da posição do ponteiro do mouse.
+                <br>
+                <br>
+                http://api.jquery.com/event.pageY
+            </td>
+        </tr>
+    
+        <tr>
+            <td>event.timeStamp</td>
+            <td>
+                A diferença em milissegundos entre 01/01/1970 e o momento no qual o evento foi criado.
+                <br>
+                <br>
+                http://api.jquery.com/event.timeStamp
+            </td>
+        </tr>
+    
+        <tr>
+            <td>event.type</td>
+            <td>
+                O tipo de evento.
+                <br>
+                <br>
+                http://api.jquery.com/event.type
+            </td>
+        </tr>
+    
+        <tr>
+            <td>event.witch</td>
+            <td>
+                A tecla ou o botão do mouse que foi pressionado.
+                
+                <br>
+                <br>
+                http://api.jquery.com/event.which
+            </td>
+        </tr>
+    </table>
+    
+    <br>
+    
+    <p>
+        MAIS SOBRE:
+        <br>
+        <br>
+        Podemos utilizar a propriedade event.which para recuperar o keyCode das teclas
+        pressionadas nos eventos keydown, keypress e keyup. Contudo, é importante saber
+        que o mapeamento de teclas para os eventos keydown e keyup é diferente do
+        mapeamento de teclas para o evento keypress.
+    </p>
+</body>
+</html>
