@@ -3,3 +3,5 @@
 <h1><i>K19 Treinamentos</i></h1>
 
 <strong>Exercícios baseado na apostila sobre HTML5, CSS e JAVASCRIPT</strong>
+
+<h4><b>Status do Curso:</b> :lock: Pausado</h4>
